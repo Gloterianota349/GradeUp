@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+:root {
+    font-size: 62.5%
+}
+
+body{
+    background-image: url('../view/img/background.png');
+}
+
+.container{
+    background-color: white;
+    width: 10.7rem;
+    height: 57.8rem;
+    display: flex;
+}
