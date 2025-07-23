@@ -62,9 +62,8 @@
                     
                 </div>
             </form>
-        </div>
     </main>
-
+    <script src="../View/js/register.js"></script>
 </body>
 
 </html>
