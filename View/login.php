@@ -26,21 +26,25 @@
                     <form>
                         <label for="userEmail">
                             <p>Email</p>
-                            <input type="email" name="userEmail" id="userEmail" placeholder="Digite o seu E-mail">
                         </label>
+                            <input type="email" name="userEmail" id="userEmail" placeholder="Digite o seu E-mail">
+                            <h2 class="msg_erro">Preencha os campos</h2>
                         
                         <label for="password">
                             <p>Senha</p>
-                            <input type="email" name="password" id="password" placeholder="Digite sua senha">
                         </label>
+                            <input type="email" name="password" id="password" placeholder="Digite sua senha">
+                            <h2 class="msg_erro">Preencha os campos</h2>
+                            <button type="submit">Entrar</button>
                     </form>
                 </div>
                     
-                <button type="submit">Entrar</button>
             
             
             <p class="inscreva-se">Ainda não tem uma conta? <span>Inscreva-se</span></p>
         </div>
     </main>
+
+    <script src="../View/js/login.js"></script>
 </body>
 </html>

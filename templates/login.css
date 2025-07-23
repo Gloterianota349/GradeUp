@@ -12,6 +12,8 @@
 
 body{
     background-image: url('../View/img/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .login_box{
@@ -22,7 +24,7 @@ body{
     margin-left: 35%;
     margin-top: 5%;
     width: 40rem;
-    height: 46rem;    
+    height: 48rem;    
     border-radius: 1.6rem;
 }
 
@@ -58,6 +60,13 @@ body{
     margin-left: 5.0rem;
 }
 
+.msg_erro{
+    font-size: 1.0rem;
+    font-family: 'Battambang';
+    color: red;
+    display: none;
+}
+
 form p{
     font-family: 'Battambang';
     font-size: 1.5rem;
@@ -80,8 +89,8 @@ input::placeholder{
 }
 
 button{
-    margin-top: 3.0rem;
-    margin-left: 15.0rem;
+    margin-left: 9.5rem;
+    margin-top: 2.0rem;
     font-family: 'Battambang';
     color: white;
     font-size: 1.5rem;
