@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    background-image: url('../View/img/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login_box{
+    
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-left: 35%;
+    margin-top: 5%;
+    width: 40rem;
+    height: 48rem;    
+    border-radius: 1.6rem;
+}
+
+.logo_storytelling{
+    margin-top: 2.0rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo_a img{
+    width: 7.0rem;
+    height: 7.0rem;
+}
+
+.logo_gradeup{
+    height: 4.2rem;
+}
+
+.logo_gradeup img{
+    width: 16.0rem;
+    height: 4.7rem;
+}
+
+.logo_storytelling h1{
+    font-family: 'Battambang';
+    font-size: 1.5rem;
+    color: #5C9FAF;
+}
+
+.form_box{
+    margin-left: 5.0rem;
+}
+
+.msg_erro{
+    font-size: 1.0rem;
+    font-family: 'Battambang';
+    color: red;
+    display: none;
+}
+
+form p{
+    font-family: 'Battambang';
+    font-size: 1.5rem;
+    color: #034454;
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+
+form input{
+    width: 30.0rem;
+    height: 4.0rem;
+    font-family: 'Battambang';
+    padding-left: 1.0rem;
+    border: 1px solid #D1CECE;
+    border-radius: 0.4rem;
+}
+
+input::placeholder{
+    color: #9BBAC1;
+}
+
+button{
+    margin-left: 9.5rem;
+    margin-top: 2.0rem;
+    font-family: 'Battambang';
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #034454;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    width: 11.0rem;
+    height: 3.8rem;
+}
+
+.inscreva-se{
+    font-family: 'Battambang';
+    font-size: 1.5rem;
+    margin-top: 2.0rem;
+    margin-left: 6.0rem;
+    color: #034454;
+    font-weight: bold;
+}
+
+span{
+    color: #00B4E2;
+    cursor: pointer;
+    text-decoration: underline;
+}
