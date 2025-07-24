@@ -1,0 +1,191 @@
+@import url(global.css);
+@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&display=swap');
+
+body {
+  font-family: 'Battambang', Arial, Helvetica, sans-serif;
+}
+
+header {
+    color: white;
+    background-color: #479F91;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 2rem 1.2rem 2rem;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.3rem;
+}
+
+.dados_perfil {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4.5rem;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #02323D;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    border: 0.2rem solid #d3c9c9;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 5.6rem;
+    width: min-content;
+}
+
+.input_notas {
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 7rem;
+    gap: 1.8rem;
+}
+
+.form {
+    color: #02323D;
+    width: 80%;
+    font-size: 140%;
+    gap: 1rem;
+}
+
+.mb-3 label {
+    margin-top: 1rem;
+}
+
+.form-control {
+    padding: 0.7rem;
+}
+
+.form-control::placeholder {
+    font-size: 120%;
+    color: #9BBAC1;
+}
+
+.nota_aprovacao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #02323D;
+    margin: 0rem;
+}
+
+#formGroupExampleInput {
+    border: 0.1rem solid #A9A8A8; 
+    border-radius: 0.4rem;
+    width: max-content;  
+    justify-content: center; 
+    align-items: center;
+}
+
+#formGroupExampleInput::placeholder {
+    opacity: 0.6;
+    font-size: 120%;
+    font-weight: 400;
+    color: #02323D;
+    padding: 0.2rem 0.5rem 0rem 0.2rem;
+}
+
+.divisor {
+    display: flex;
+    position: relative;
+    height: 30rem;
+    justify-content: center;
+    align-items: center;
+    background-image: url('img/linha.png');
+    background-repeat: no-repeat;
+    background-size: 5% 100%;
+    background-position: center center;
+}
+
+#resultado {
+    border-radius: 999px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s; /* Suaviza a animação */
+}
+
+#resultado:hover {
+    transform: scale(1.10); /* Aumenta em 5% */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Adiciona sombra */
+}
+
+.resultado {
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+}
+
+h4 {
+    font-size: 5rem;
+    color: #5C9FAF;
+}
+
+.status {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+h5 {
+    font-size: 1.5rem;
+    color: #02323D;
+}
+
+h6 {
+    font-size: 1.65rem;
+}
