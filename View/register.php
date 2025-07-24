@@ -1,3 +1,35 @@
+<?php
+    require_once '../vendor/autoload.php';
+
+    use Controller\UserController;
+
+    $userController = new UserController();
+
+    $registerUserMesasage = '';
+
+    if($_SERVER['REQUEST_METHOD'] === 'POST'){
+        if(isset($_POST['nomecompleto'], $_POST['email'], $_POST['senha'], $_POST['nomeinst'], $_POST['ip'])){
+            $nomeCompleto = $_POST['nomecompleto'];
+            $email = $_POST['email'];
+            $senha = $_POST['senha'];
+            $nomeinst = $_POST['nomeinst'];
+            $ip = $_POST['ip'];
+        
+            if($userController -> checkUserByEmail($email)){
+                $registerUserMesasage = "Este email já foi cadastrado por outro usuário";
+            
+            } else{
+                if($userController -> createUser($nomeCompleto, $email, $senha, $nomeinst, $ip)){
+                    header('Location: ../View/home.php');
+                    exit();
+                } else {
+                    $registerUserMesasage = 'Erro ao cadastrar';
+                }
+            }
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -24,7 +56,7 @@
                 <p>Cadastre-se para aproveitar nossos recursos</p>
             </div>
 
-            <form>
+            <form method="POST">
                 <div class="formularios">
 
                     <div class="dadospessoais">
@@ -54,7 +86,7 @@
 
 
                         <label for="IP">Identificação Profissional - IP</label>
-                        <input type="number" id="IP" Class="IP" name="IP" placeholder="Digite o seu IP">
+                        <input type="number" id="IP" Class="IP" name="ip" placeholder="Digite o seu IP">
                         <p class="CampoObrigatorio">Todos os campos são obrigatórios</p>
                         <button type="submit">Cadastrar-se</button>
                     </div>
@@ -62,6 +94,7 @@
                     
                 </div>
             </form>
+            <p><?php echo $registerUserMesasage; ?> </p>
     </main>
     <script src="../View/js/register.js"></script>
 </body>

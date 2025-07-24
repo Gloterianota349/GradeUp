@@ -1,7 +1,7 @@
 <?php
 // Configuração do BD
 
-define("DB_NAME", "grade_up");
+define("DB_NAME", "gradeup");
 define("DB_HOST", "localhost");
 define("DB_USER", "root");
 define("DB_PASSWORD", "");
