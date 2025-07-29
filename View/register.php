@@ -70,11 +70,11 @@
                         <p class="CampoObrigatorio">Todos os campos são obrigatórios</p>
 
                         <label for="senha">Senha</label>
-                        <input type="text" id="senha" class="senha" name="senha" placeholder="Digite a sua senha">
+                        <input type="password" id="senha" class="senha" name="senha" placeholder="Digite a sua senha">
                         <p class="CampoObrigatorio">Todos os campos são obrigatórios</p>
 
                         <label for="senhaconfirm">Confirmar senha</label>
-                        <input type="text" id="senchaconfirm" class="senhaconfirm" name="senchaconfirm" placeholder="confirme sua senha">
+                        <input type="password" id="senchaconfirm" class="senhaconfirm" name="senchaconfirm" placeholder="confirme sua senha">
                         <p class="CampoObrigatorio">Todos os campos são obrigatórios</p>
                     </div>
 
@@ -90,8 +90,6 @@
                         <p class="CampoObrigatorio">Todos os campos são obrigatórios</p>
                         <button type="submit">Cadastrar-se</button>
                     </div>
-
-                    
                 </div>
             </form>
             <p><?php echo $registerUserMesasage; ?> </p>

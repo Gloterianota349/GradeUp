@@ -58,7 +58,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
                         <label for="password">
                             <p>Senha</p>
                         </label>
-                            <input type="text" name="password" id="password" placeholder="Digite sua senha">
+                            <input type="password" name="password" id="password" placeholder="Digite sua senha">
                             <h2 class="msg_erro">Preencha os campos</h2>
                             <button type="submit">Entrar</button>
                     </form> 
@@ -66,7 +66,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
                
                 </div>
             
-            <p class="inscreva-se">Ainda não tem uma conta? <span>Inscreva-se</span></p>
+            <p class="inscreva-se">Ainda não tem uma conta? <span>Cadastre-se</span></p>
         </div>
 
          <p> <?php echo $mensagem; ?></p>

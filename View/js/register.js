@@ -1,6 +1,7 @@
 const form = document.querySelector('form')
 const inputs = document.querySelectorAll('input')
 const erro = document.querySelectorAll('.CampoObrigatorio')
+const cadastre = document.querySelector('span') 
 
 form.addEventListener('submit', (event) =>{
     event.preventDefault()
