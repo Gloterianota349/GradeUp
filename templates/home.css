@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&display=swap');
 
 body {
-  font-family: 'Battambang', Arial, Helvetica, sans-serif;
+    font-family: 'Battambang', Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -46,6 +46,7 @@ main {
     justify-content: center;
     align-items: center;
     padding-top: 4.5rem;
+    padding-bottom: 5rem;
 }
 
 .titulo {
@@ -75,6 +76,16 @@ h1 {
     width: min-content;
 }
 
+.form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 5.6rem;
+    width: min-content;
+}
+
 .input_notas {
     width: 50rem;
     display: flex;
@@ -85,7 +96,7 @@ h1 {
     gap: 1.8rem;
 }
 
-.form {
+.form1 {
     color: #02323D;
     width: 80%;
     font-size: 140%;

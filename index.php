@@ -24,5 +24,18 @@
             </div>
         </div>
     </main>
+
+    <script>
+        const btn_login = document.querySelector('.login');
+        const btn_cadastro = document.querySelector('.cadastro');
+
+        btn_login.addEventListener('click', () => {
+            window.location.href = '../GradeUp/View/login.php';
+        })
+
+        btn_cadastro.addEventListener('click', () => {
+            window.location.href = '../GradeUp/View/register.php';
+        })
+    </script>
 </body>
 </html>

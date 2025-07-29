@@ -1,3 +1,28 @@
+<?php
+session_start();  
+require_once '../vendor/autoload.php';
+
+use Controller\UserController;
+
+$userController = new UserController();
+$mensagem = '';
+
+if($_SERVER['REQUEST_METHOD'] === 'POST'){
+    $email = $_POST['userEmail'];
+    $password = $_POST['password'];
+
+    if($userController->login($email, $password)){
+        header('Location: ../View/home.php');
+        exit();
+        
+    } else {
+        $mensagem = "Email ou senha incorretos";
+    }
+}
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -23,7 +48,7 @@
             </div>
             
                 <div class="form_box">
-                    <form>
+                    <form method= "POST">
                         <label for="userEmail">
                             <p>Email</p>
                         </label>
@@ -33,16 +58,18 @@
                         <label for="password">
                             <p>Senha</p>
                         </label>
-                            <input type="email" name="password" id="password" placeholder="Digite sua senha">
+                            <input type="password" name="password" id="password" placeholder="Digite sua senha">
                             <h2 class="msg_erro">Preencha os campos</h2>
                             <button type="submit">Entrar</button>
-                    </form>
+                    </form> 
+                   
+               
                 </div>
-                    
             
-            
-            <p class="inscreva-se">Ainda não tem uma conta? <span>Inscreva-se</span></p>
+            <p class="inscreva-se">Ainda não tem uma conta? <span>Cadastre-se</span></p>
         </div>
+
+         <p> <?php echo $mensagem; ?></p>
     </main>
 
     <script src="../View/js/login.js"></script>
