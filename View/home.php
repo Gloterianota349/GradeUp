@@ -4,15 +4,24 @@ session_start();
 require_once '../vendor/autoload.php';
 
 use Controller\NotesController;
+use Controller\UserController;
 
 $mediaController = new NotesController();
+$userController = new UserController();
 
 $mediaResult = null;
+$userInfo = null;
 
 // if(!$userController->isLoggedIn()) {
 //     header('Location: ../index.php');
 //     exit();
 // }
+
+$user_id = $_SESSION['id'];
+$user_fullname = $_SESSION['user_fullname'];
+$user_email = $_SESSION['email'];
+
+$userInfo = $userController->getUserData($user_id, $user_fullname, $user_email);
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['note1'], $_POST['note2'], $_POST['note3'], $_POST['min_note'])) {
@@ -54,14 +63,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
                 </svg>
             </div>
-            <div class="dados_perfil">
-                <div class="nome">
-                    <h2>Nome Example</h2>
+            <?php if ($userInfo): ?>
+                <div class="dados_perfil">
+                    <div class="nome">
+                        <h2><?php echo $userInfo['user_fullname'] ?></h2>
+                    </div>
+                    <div class="email">
+                        <h3><?php echo $userInfo['email'] ?></h3>
+                    </div>
                 </div>
-                <div class="email">
-                    <h3>Email@example.com</h3>
-                </div>
-            </div>
+            <?php endif; ?>
         </div>
         <div class="sair">
             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
