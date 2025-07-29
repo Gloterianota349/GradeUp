@@ -8,7 +8,6 @@ use Controller\NotesController;
 $mediaController = new NotesController();
 
 $mediaResult = null;
-$userInfo = null;
 
 // if(!$userController->isLoggedIn()) {
 //     header('Location: ../index.php');
@@ -24,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $mediaResult = $mediaController->calculateMedia($note1, $note2, $note3, $min_note);
 
-        if ($mediaResult['BMIrange'] != 'As notas devem conter valores válidos') {
+        if ($mediaResult['Aprovation'] != 'As notas devem conter valores válidos') {
             $mediaController->saveMedia($note1, $note2, $note3, $min_note, $mediaResult['media']);
         }
     }
@@ -79,41 +78,42 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <img src="../templates/img/GradeUp.png" alt="" width="220" height="45">
             <h1>Insira as notas e tenha o seu trabalho facilitado pelo GradeUp!</h1>
         </div>
-        <form class="form" id="form" method="POST" action="home.php">
             <div class="container">
-                <div class="input_notas">
-                    <div class="form1" id="form1">
-                        <div class="mb-3" style="font-weight: bold">
-                            <label for="formGroupExampleInput" class="form-label">Nota 1</label>
-                            <input type="text" name="note1" class="form-control" id="formGroupExampleInput1"
-                                placeholder="Digite a 1ª nota">
+                <form class="form" id="form" method="POST">
+                    <div class="input_notas">
+                        <div class="form1" id="form1">
+                            <div class="mb-3" style="font-weight: bold">
+                                <label for="formGroupExampleInput" class="form-label">Nota 1</label>
+                                <input type="text" name="note1" class="form-control" id="formGroupExampleInput1"
+                                    placeholder="Digite a 1ª nota">
+                            </div>
+                            <div class="mb-3" style="font-weight: bold">
+                                <label for="formGroupExampleInput2" class="form-label">Nota 2</label>
+                                <input type="text" name="note2" class="form-control" id="formGroupExampleInput2"
+                                    placeholder="Digite a 2ª nota">
+                            </div>
+                            <div class="mb-3" style="font-weight: bold">
+                                <label for="formGroupExampleInput2" class="form-label">Nota 3</label>
+                                <input type="text" name="note3" class="form-control" id="formGroupExampleInput3"
+                                    placeholder="Digite a 3ª nota">
+                            </div>
                         </div>
-                        <div class="mb-3" style="font-weight: bold">
-                            <label for="formGroupExampleInput2" class="form-label">Nota 2</label>
-                            <input type="text" name="note2" class="form-control" id="formGroupExampleInput2"
-                                placeholder="Digite a 2ª nota">
-                        </div>
-                        <div class="mb-3" style="font-weight: bold">
-                            <label for="formGroupExampleInput2" name="note3" class="form-label">Nota 3</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput3"
-                                placeholder="Digite a 3ª nota">
+                        <div class="nota_aprovacao">
+                            <p>Mínimo para aprovação: </p>
+                            <input type="text" name="min_note" class="form-control" id="formGroupExampleInput" placeholder="Nota Mínima">
                         </div>
                     </div>
-                    <div class="nota_aprovacao">
-                        <p>Mínimo para aprovação: </p>
-                        <input type="text" name="min_note" class="form-control" id="formGroupExampleInput" placeholder="Nota Mínima">
+                    <div class="divisor">
+                        <button type="submit" style="border-radius: 999px; background-color: white; border: none;"><img src="../templates/img/Igual.png" alt="" width="60" height="60" id="resultado"></button>
                     </div>
-                </div>
-                <div class="divisor">
-                    <button type="submit" style="border-radius: 999px; background-color: white; border: none;"><img src="../templates/img/Igual.png" alt="" width="60" height="60" id="resultado"></button>
-                </div>
+                </form>
                 <div class="resultado">
                     <p>Média</p>
                     <?php if ($mediaResult): ?>
-                            <h4 id="result_num"><?php echo $mediaResult['media']; ?></h4>
+                            <h4 id="result_num"><?php echo $mediaResult['media'] ?? ''; ?></h4>
                         <div class="status">
                             <h5>Status: </h5>
-                            <h6 id="statusTexto"> <?php echo $mediaResult['BMIrange']; ?> </h6>
+                            <h6 id="statusTexto"> <?php echo $mediaResult['Aprovation']; ?> </h6>
                         </div>
 
                     <?php else: ?>
@@ -122,7 +122,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <?php endif; ?>
                 </div>
             </div>
-        </form>
     </main>
 
 
@@ -160,6 +159,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         //         document.getElementById("statusTexto").style.color = "#FF530F";
         //     }
         // })
+
+        document.getElementById('resultado').addEventListener('click', function mostrarResultado() {
+            $text = document.getElementById('statusTexto').value;
+            if ($text == "APROVADO") {
+                document.getElementById("statusTexto").style.color = "#479F91";
+            } else if ($text == "REPROVADO") {
+                document.getElementById("statusTexto").style.color = "#FF530F";
+            } else {
+                document.getElementById("statusTexto").style.color = "#000000";
+            }
+        })
     </script>
 
 </body>

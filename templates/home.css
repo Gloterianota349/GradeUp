@@ -76,6 +76,16 @@ h1 {
     width: min-content;
 }
 
+.form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 5.6rem;
+    width: min-content;
+}
+
 .input_notas {
     width: 50rem;
     display: flex;
