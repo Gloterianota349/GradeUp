@@ -1,17 +1,19 @@
 {
-    "name": "guilherme/grade-up",
-    "description": "Calculadora de notas",
+    "name": "beatriz/gradeup",
     "type": "project",
     "autoload": {
         "psr-4": {
-            "Guilherme\\GradeUp\\": "GradeUp/",
+            "Beatriz\\Gradeup\\": "GradeUp/",
             "Controller\\": "Controller/",
             "Model\\": "Model/"
-        },
-        "files": [
-            "Config/configuration.php"
-        ]
+        }
     },
+    "authors": [
+        {
+            "name": "biamot4",
+            "email": "beatrizmotasesi@gmail.com"
+        }
+    ],
     "minimum-stability": "dev",
     "require": {
         "php": ">= 8.0",
