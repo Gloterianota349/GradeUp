@@ -8,6 +8,7 @@ class UserController{
     private $userModel;
 
     public function __construct(){
+        
         $this -> userModel = new User();
     }
 
@@ -21,15 +22,13 @@ class UserController{
     }
 
     public function checkUserByEmail($email){
-        {
             return $this -> userModel -> getUser_Email($email);
-        }
     }
 
     public function login ($email, $password){
         $user = $this -> userModel -> getUser_Email($email);
 
-        if($user && password_verify($password, $user['passoword'])){
+        if($user && password_verify($password, $user['password'])){
             $_SESSION['id'] = $user['id'];
             $_SESSION['user_fullname'] = $user['user_fullname'];
             $_SESSION['email'] = $user['email'];
