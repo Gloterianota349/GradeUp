@@ -20,7 +20,7 @@
             
             } else{
                 if($userController -> createUser($nomeCompleto, $email, $senha, $nomeinst, $ip)){
-                    header('Location: ../View/home.php');
+                    header('Location: ../View/login.php');
                     exit();
                 } else {
                     $registerUserMesasage = 'Erro ao cadastrar';
