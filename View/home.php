@@ -51,6 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="../templates/home.css">
+    <link rel="icon" href="../View/img/A+.png">
 </head>
 
 <body>
@@ -86,7 +87,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </header>
     <main>
         <div class="titulo">
-            <img src="../templates/img/GradeUp.png" alt="" width="220" height="45">
+            <img src="../View/img/GradeUp.png" alt="" width="220" height="45">
             <h1>Insira as notas e tenha o seu trabalho facilitado pelo GradeUp!</h1>
         </div>
             <div class="container">
@@ -115,7 +116,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         </div>
                     </div>
                     <div class="divisor">
-                        <button type="submit" style="border-radius: 999px; background-color: white; border: none;"><img src="../templates/img/Igual.png" alt="" width="60" height="60" id="resultado"></button>
+                        <button type="submit" style="border-radius: 999px; background-color: white; border: none;"><img src="../View/img/Igual.png" alt="" width="60" height="60" id="resultado"></button>
                     </div>
                 </form>
                 <div class="resultado">
