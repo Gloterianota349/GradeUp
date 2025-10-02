@@ -2,6 +2,9 @@
     "name": "beatriz/gradeup",
     "type": "project",
     "autoload": {
+        "classmap": [
+            "Controller/"
+        ],
         "psr-4": {
             "Beatriz\\Gradeup\\": "GradeUp/",
             "Controller\\": "Controller/",
