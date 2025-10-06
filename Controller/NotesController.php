@@ -10,8 +10,8 @@ class NotesController
 {
     private $notesModel;
 
-    public function __construct() {
-        $this->notesModel = new Notes();
+    public function __construct(Notes $notesModel) {
+        $this->notesModel = $notesModel;
     }
 
     public function calculateMedia($note1, $note2, $note3, $min_note) {
