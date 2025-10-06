@@ -16,11 +16,12 @@
         ]
     },
     "minimum-stability": "dev",
-    "require": {
-        "php": ">= 8.0",
-        "ext-mbstring": "*"
+    "config": {
+        "platform": {
+            "php": "8.2.12"
+        }
     },
     "require-dev": {
-        "phpunit/phpunit": "12"
+        "phpunit/phpunit": "11.5.x-dev"
     }
 }

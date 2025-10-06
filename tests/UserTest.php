@@ -7,7 +7,7 @@ use Controller\UserController;
 
 use Model\User;
 
-class LoginTest extends TestCase{
+class UserTest extends TestCase{
     private $userController;
 
     private $mockUserModel;
@@ -18,6 +18,26 @@ class LoginTest extends TestCase{
         $this->userController = new UserController($this->mockUserModel);
     }
 
+    #[\PHPUnit\Framework\Attributes\Test]
+        public function it_should_register_users_with_valid_credentials() {
+        $this->mockUserModel->method('registerUser')->willReturn(True);
+        $userResult = $this->userController->createUser( 'Beatriz Mota', ' beatriz@example.com', '12345', 'SESI', 654321);
+        $this->assertTrue($userResult);
+    }
+
+    #[\PHPUnit\Framework\Attributes\Test]
+    public function it_should_not_register_already_registered_email() {
+        $this->mockUserModel->method('registerUser')->willReturn(false);
+
+        $userResult = $this->userController->createUser(
+            'Beatriz Santos',
+            'beatriz@example.com',
+            '54321',
+            ' SENAI',
+            123456
+        );
+        $this->assertFalse($userResult, 'Este email já foi cadastrado por outro usuário');
+    }
 
     #[\PHPUnit\Framework\Attributes\Test]
     public function it_should_be_able_to_sign_in(){
@@ -46,7 +66,7 @@ class LoginTest extends TestCase{
         ]);
 
         $userResult = $this -> userController -> login('beatriz@example.com', '123456');
-        $this->assertFalse($userResult);
+        $this->assertFalse($userResult, 'Email ou senha incorretos');
     }
 
 
