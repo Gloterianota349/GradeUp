@@ -12,10 +12,14 @@
             $nomeCompleto = $_POST['nomecompleto'];
             $email = $_POST['email'];
             $senha = $_POST['senha'];
+            $senhaconfirm = $_POST['senchaconfirm'];
             $nomeinst = $_POST['nomeinst'];
             $ip = $_POST['ip'];
         
-            if($userController -> checkUserByEmail($email)){
+            if($senha != $senhaconfirm){
+                $registerUserMesasage = "As senhas digitadas não são compatíveis.";
+
+            } else if($userController -> checkUserByEmail($email)){
                 $registerUserMesasage = "Este email já foi cadastrado por outro usuário";
             
             } else{

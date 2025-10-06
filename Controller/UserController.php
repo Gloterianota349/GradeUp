@@ -7,9 +7,8 @@ use Exception;
 class UserController{
     private $userModel;
 
-    public function __construct(){
-        
-        $this -> userModel = new User();
+    public function __construct($userModel){
+        $this->userModel = $userModel ?? new User();
     }
 
     public function createUser($user_fullname, $email, $password, $institution, $ip){

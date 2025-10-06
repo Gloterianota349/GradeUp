@@ -1,14 +1,14 @@
 {
-    "name": "beatriz/gradeup",
+    "name": "beatriz/grade_up",
     "type": "project",
     "autoload": {
         "classmap": [
             "Controller/"
         ],
         "psr-4": {
-            "Beatriz\\Gradeup\\": "GradeUp/",
-            "Controller\\": "Controller/",
-            "Model\\": "Model/"
+            "Beatriz\\GradeUp\\": "src/",
+            "Model\\": "Model/",
+        "Controller\\": "Controller/"
         }
     },
     "authors": [
@@ -19,7 +19,10 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": ">= 8.0",
+        "php": ">= 8.2",
         "ext-mbstring": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5"
     }
 }
