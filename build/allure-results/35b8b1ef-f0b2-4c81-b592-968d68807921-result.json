@@ -1,10 +1,10 @@
 {
-    "uuid": "cf497b27-1c73-4fbd-a5c3-383fe8d496a7",
-    "name": "Deve ser capaz de salvar a média calculada",
+    "uuid": "35b8b1ef-f0b2-4c81-b592-968d68807921",
+    "name": "Não deve calcular a média com entradas nulas",
     "description": null,
     "descriptionHtml": null,
-    "start": 1759838625203,
-    "stop": 1759838625209,
+    "start": 1759839605419,
+    "stop": 1759839605419,
     "status": "passed",
     "statusDetails": {
         "known": null,
@@ -16,11 +16,11 @@
     "stage": "finished",
     "steps": [
         {
-            "name": "Passo 1: Calcular a média primeiro",
+            "name": "Testando com a primeira nota nula",
             "description": null,
             "descriptionHtml": null,
-            "start": 1759838625203,
-            "stop": 1759838625203,
+            "start": 1759839605419,
+            "stop": 1759839605419,
             "status": "passed",
             "statusDetails": null,
             "stage": "finished",
@@ -29,11 +29,11 @@
             "parameters": []
         },
         {
-            "name": "Passo 2: Configurar mock e salvar os dados",
+            "name": "Testando com a segunda nota nula",
             "description": null,
             "descriptionHtml": null,
-            "start": 1759838625203,
-            "stop": 1759838625209,
+            "start": 1759839605419,
+            "stop": 1759839605419,
             "status": "passed",
             "statusDetails": null,
             "stage": "finished",
@@ -44,10 +44,10 @@
     ],
     "attachments": [],
     "parameters": [],
-    "historyId": "b12b98478dabcc9c2ec996471d7b3724",
-    "testCaseId": "53c3f5bfdaabb88f9175751f23a5e58e",
+    "historyId": "e4b602ef81b4f36b2cfd0edc03fcfc7a",
+    "testCaseId": "a3b7e9cd1c60e5f60714a31d79d7a1ca",
     "rerunOf": null,
-    "fullName": "NotesTest::it_should_be_able_to_save_media",
+    "fullName": "NotesTest::it_shouldnt_be_able_to_calculate_media_and_approval_with_empty_inputs",
     "labels": [
         {
             "name": "testClass",
@@ -55,7 +55,7 @@
         },
         {
             "name": "testMethod",
-            "value": "it_should_be_able_to_save_media"
+            "value": "it_shouldnt_be_able_to_calculate_media_and_approval_with_empty_inputs"
         },
         {
             "name": "host",
@@ -67,11 +67,11 @@
         },
         {
             "name": "severity",
-            "value": "critical"
+            "value": "normal"
         },
         {
             "name": "story",
-            "value": "Persistência de Dados"
+            "value": "Validação de Entradas"
         },
         {
             "name": "feature",

@@ -1,10 +1,10 @@
 {
-    "uuid": "e8946bed-1ee7-4de0-93cd-72d563a01ac3",
-    "name": "Não deve realizar o login com credenciais inválidas",
-    "description": "Verifica se o sistema nega o acesso quando a senha ou o email estão incorretos.",
+    "uuid": "6d1bda22-a6ce-4917-b8ef-085f7bce4d1e",
+    "name": "Deve registrar um novo usuário com sucesso",
+    "description": "Verifica se um usuário pode ser criado com dados válidos e o método de registro retorna verdadeiro.",
     "descriptionHtml": null,
-    "start": 1759838625329,
-    "stop": 1759838625436,
+    "start": 1759839605392,
+    "stop": 1759839605410,
     "status": "passed",
     "statusDetails": {
         "known": null,
@@ -16,11 +16,11 @@
     "stage": "finished",
     "steps": [
         {
-            "name": "Passo 1: Configurar o mock para retornar um usuário qualquer",
+            "name": "Passo 1: Configurar o mock para simular sucesso no registro",
             "description": null,
             "descriptionHtml": null,
-            "start": 1759838625329,
-            "stop": 1759838625383,
+            "start": 1759839605392,
+            "stop": 1759839605410,
             "status": "passed",
             "statusDetails": null,
             "stage": "finished",
@@ -29,11 +29,11 @@
             "parameters": []
         },
         {
-            "name": "Passo 2: Tentar logar com a senha errada",
+            "name": "Passo 2: Chamar o método de criação de usuário",
             "description": null,
             "descriptionHtml": null,
-            "start": 1759838625383,
-            "stop": 1759838625436,
+            "start": 1759839605410,
+            "stop": 1759839605410,
             "status": "passed",
             "statusDetails": null,
             "stage": "finished",
@@ -42,11 +42,11 @@
             "parameters": []
         },
         {
-            "name": "Passo 3: Verificar se o login falhou",
+            "name": "Passo 3: Verificar se o resultado é verdadeiro",
             "description": null,
             "descriptionHtml": null,
-            "start": 1759838625436,
-            "stop": 1759838625436,
+            "start": 1759839605410,
+            "stop": 1759839605410,
             "status": "passed",
             "statusDetails": null,
             "stage": "finished",
@@ -57,10 +57,10 @@
     ],
     "attachments": [],
     "parameters": [],
-    "historyId": "152a892a240fa853f8b62cd5b406f83d",
-    "testCaseId": "7dc4db181ffafb464cb4932769104e2f",
+    "historyId": "8e0b7d66f700ef72776ba885e80832c8",
+    "testCaseId": "b9955d149d43bebd8673157ae60cecfa",
     "rerunOf": null,
-    "fullName": "UserTest::it_shouldnt_login_with_invalid_credentials",
+    "fullName": "UserTest::it_should_register_users_with_valid_credentials",
     "labels": [
         {
             "name": "testClass",
@@ -68,7 +68,7 @@
         },
         {
             "name": "testMethod",
-            "value": "it_shouldnt_login_with_invalid_credentials"
+            "value": "it_should_register_users_with_valid_credentials"
         },
         {
             "name": "host",
@@ -84,7 +84,7 @@
         },
         {
             "name": "story",
-            "value": "Login de Usuário"
+            "value": "Registro de Usuário"
         },
         {
             "name": "feature",

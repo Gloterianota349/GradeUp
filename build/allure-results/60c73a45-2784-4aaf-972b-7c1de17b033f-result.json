@@ -1,10 +1,10 @@
 {
-    "uuid": "c9524e06-7838-43ed-a3ee-66fe7765b5c8",
-    "name": "Deve registrar um novo usuário com sucesso",
-    "description": "Verifica se um usuário pode ser criado com dados válidos e o método de registro retorna verdadeiro.",
+    "uuid": "60c73a45-2784-4aaf-972b-7c1de17b033f",
+    "name": "Não deve registrar um usuário com email duplicado",
+    "description": "Verifica se o sistema impede o registro quando o email fornecido já existe na base de dados.",
     "descriptionHtml": null,
-    "start": 1759838625440,
-    "stop": 1759838625440,
+    "start": 1759839605412,
+    "stop": 1759839605413,
     "status": "passed",
     "statusDetails": {
         "known": null,
@@ -16,11 +16,11 @@
     "stage": "finished",
     "steps": [
         {
-            "name": "Passo 1: Configurar o mock para simular sucesso no registro",
+            "name": "Passo 1: Configurar o mock para simular falha por email duplicado",
             "description": null,
             "descriptionHtml": null,
-            "start": 1759838625440,
-            "stop": 1759838625440,
+            "start": 1759839605412,
+            "stop": 1759839605413,
             "status": "passed",
             "statusDetails": null,
             "stage": "finished",
@@ -29,11 +29,11 @@
             "parameters": []
         },
         {
-            "name": "Passo 2: Chamar o método de criação de usuário",
+            "name": "Passo 2: Tentar criar um usuário com email já existente",
             "description": null,
             "descriptionHtml": null,
-            "start": 1759838625440,
-            "stop": 1759838625440,
+            "start": 1759839605413,
+            "stop": 1759839605413,
             "status": "passed",
             "statusDetails": null,
             "stage": "finished",
@@ -42,11 +42,11 @@
             "parameters": []
         },
         {
-            "name": "Passo 3: Verificar se o resultado é verdadeiro",
+            "name": "Passo 3: Verificar se o resultado é falso",
             "description": null,
             "descriptionHtml": null,
-            "start": 1759838625440,
-            "stop": 1759838625440,
+            "start": 1759839605413,
+            "stop": 1759839605413,
             "status": "passed",
             "statusDetails": null,
             "stage": "finished",
@@ -57,10 +57,10 @@
     ],
     "attachments": [],
     "parameters": [],
-    "historyId": "8e0b7d66f700ef72776ba885e80832c8",
-    "testCaseId": "b9955d149d43bebd8673157ae60cecfa",
+    "historyId": "5b211bfa1f2f56ea484bfedc5d5f4a94",
+    "testCaseId": "2b1190ae008f44c89d14a896577de157",
     "rerunOf": null,
-    "fullName": "UserTest::it_should_register_users_with_valid_credentials",
+    "fullName": "UserTest::it_should_not_register_already_registered_email",
     "labels": [
         {
             "name": "testClass",
@@ -68,7 +68,7 @@
         },
         {
             "name": "testMethod",
-            "value": "it_should_register_users_with_valid_credentials"
+            "value": "it_should_not_register_already_registered_email"
         },
         {
             "name": "host",

@@ -1,10 +1,10 @@
 {
-    "uuid": "8c5a516d-cefd-49f7-b0da-bc00c49a0a24",
-    "name": "Não deve calcular a média com entradas negativas",
-    "description": null,
+    "uuid": "1ab1d007-1fe9-44fb-b38a-ed7c140e4ac2",
+    "name": "Deve verificar corretamente o status de \"logado\"",
+    "description": "Testa a função isLoggedIn para garantir que ela retorna verdadeiro quando um ID de usuário existe na sessão.",
     "descriptionHtml": null,
-    "start": 1759838625186,
-    "stop": 1759838625193,
+    "start": 1759839605256,
+    "stop": 1759839605257,
     "status": "passed",
     "statusDetails": {
         "known": null,
@@ -16,11 +16,11 @@
     "stage": "finished",
     "steps": [
         {
-            "name": "Testando com a primeira nota negativa",
+            "name": "Passo 1: Simular uma sessão ativa",
             "description": null,
             "descriptionHtml": null,
-            "start": 1759838625187,
-            "stop": 1759838625189,
+            "start": 1759839605256,
+            "stop": 1759839605256,
             "status": "passed",
             "statusDetails": null,
             "stage": "finished",
@@ -29,11 +29,11 @@
             "parameters": []
         },
         {
-            "name": "Testando com a segunda nota negativa",
+            "name": "Passo 2: Chamar o método de verificação",
             "description": null,
             "descriptionHtml": null,
-            "start": 1759838625189,
-            "stop": 1759838625189,
+            "start": 1759839605256,
+            "stop": 1759839605256,
             "status": "passed",
             "statusDetails": null,
             "stage": "finished",
@@ -42,24 +42,11 @@
             "parameters": []
         },
         {
-            "name": "Testando com a terceira nota negativa",
+            "name": "Passo 3: Validar o resultado",
             "description": null,
             "descriptionHtml": null,
-            "start": 1759838625189,
-            "stop": 1759838625189,
-            "status": "passed",
-            "statusDetails": null,
-            "stage": "finished",
-            "steps": [],
-            "attachments": [],
-            "parameters": []
-        },
-        {
-            "name": "Testando com a nota mínima negativa",
-            "description": null,
-            "descriptionHtml": null,
-            "start": 1759838625189,
-            "stop": 1759838625189,
+            "start": 1759839605256,
+            "stop": 1759839605257,
             "status": "passed",
             "statusDetails": null,
             "stage": "finished",
@@ -70,18 +57,18 @@
     ],
     "attachments": [],
     "parameters": [],
-    "historyId": "7e15d594047e348b417029d25263a1bd",
-    "testCaseId": "4530b07062b8a5b85b1742672a40397b",
+    "historyId": "96db153a3b60ecf8101b8b71ba414fbe",
+    "testCaseId": "c813de96e09c65c2da1cc0c216516ccc",
     "rerunOf": null,
-    "fullName": "NotesTest::it_shouldnt_be_able_to_calculate_media_and_approval_with_invalid_inputs",
+    "fullName": "UserTest::It_should_verify_if_is_logged_in",
     "labels": [
         {
             "name": "testClass",
-            "value": "NotesTest"
+            "value": "UserTest"
         },
         {
             "name": "testMethod",
-            "value": "it_shouldnt_be_able_to_calculate_media_and_approval_with_invalid_inputs"
+            "value": "It_should_verify_if_is_logged_in"
         },
         {
             "name": "host",
@@ -97,11 +84,11 @@
         },
         {
             "name": "story",
-            "value": "Validação de Entradas"
+            "value": "Sessão de Usuário"
         },
         {
             "name": "feature",
-            "value": "Gerenciamento de Notas"
+            "value": "Autenticação de Usuário"
         }
     ],
     "links": []

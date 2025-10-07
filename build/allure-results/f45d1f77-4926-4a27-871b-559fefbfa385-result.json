@@ -1,10 +1,10 @@
 {
-    "uuid": "269688d1-461a-4bdb-bfe7-7bd4f18fa7a1",
-    "name": "Deve retornar o status de aprovação correto (Aprovado\/Reprovado)",
-    "description": null,
+    "uuid": "f45d1f77-4926-4a27-871b-559fefbfa385",
+    "name": "Não deve realizar o login com credenciais inválidas",
+    "description": "Verifica se o sistema nega o acesso quando a senha ou o email estão incorretos.",
     "descriptionHtml": null,
-    "start": 1759838625199,
-    "stop": 1759838625201,
+    "start": 1759839604716,
+    "stop": 1759839605220,
     "status": "passed",
     "statusDetails": {
         "known": null,
@@ -16,11 +16,11 @@
     "stage": "finished",
     "steps": [
         {
-            "name": "Verificando o status \"APROVADO\"",
+            "name": "Passo 1: Configurar o mock para retornar um usuário qualquer",
             "description": null,
             "descriptionHtml": null,
-            "start": 1759838625199,
-            "stop": 1759838625201,
+            "start": 1759839604718,
+            "stop": 1759839604959,
             "status": "passed",
             "statusDetails": null,
             "stage": "finished",
@@ -29,11 +29,24 @@
             "parameters": []
         },
         {
-            "name": "Verificando o status \"REPROVADO\"",
+            "name": "Passo 2: Tentar logar com a senha errada",
             "description": null,
             "descriptionHtml": null,
-            "start": 1759838625201,
-            "stop": 1759838625201,
+            "start": 1759839604959,
+            "stop": 1759839605029,
+            "status": "passed",
+            "statusDetails": null,
+            "stage": "finished",
+            "steps": [],
+            "attachments": [],
+            "parameters": []
+        },
+        {
+            "name": "Passo 3: Verificar se o login falhou",
+            "description": null,
+            "descriptionHtml": null,
+            "start": 1759839605029,
+            "stop": 1759839605065,
             "status": "passed",
             "statusDetails": null,
             "stage": "finished",
@@ -44,18 +57,18 @@
     ],
     "attachments": [],
     "parameters": [],
-    "historyId": "6d3740fc652121a31a1b4a85edbe31db",
-    "testCaseId": "c0bddc00b2d6020639bb159ae5ff0a36",
+    "historyId": "152a892a240fa853f8b62cd5b406f83d",
+    "testCaseId": "7dc4db181ffafb464cb4932769104e2f",
     "rerunOf": null,
-    "fullName": "NotesTest::it_should_be_able_to_get_approval",
+    "fullName": "UserTest::it_shouldnt_login_with_invalid_credentials",
     "labels": [
         {
             "name": "testClass",
-            "value": "NotesTest"
+            "value": "UserTest"
         },
         {
             "name": "testMethod",
-            "value": "it_should_be_able_to_get_approval"
+            "value": "it_shouldnt_login_with_invalid_credentials"
         },
         {
             "name": "host",
@@ -71,11 +84,11 @@
         },
         {
             "name": "story",
-            "value": "Cálculo de Média"
+            "value": "Login de Usuário"
         },
         {
             "name": "feature",
-            "value": "Gerenciamento de Notas"
+            "value": "Autenticação de Usuário"
         }
     ],
     "links": []

@@ -1,0 +1,107 @@
+{
+    "uuid": "2c7ced30-d353-4822-aff9-74100579ca33",
+    "name": "Deve calcular a média e o status APROVADO com sucesso",
+    "description": "Este teste verifica se o cálculo da média está correto e se o status de aprovação é retornado corretamente quando a média é igual ou superior à nota mínima.",
+    "descriptionHtml": null,
+    "start": 1759839605486,
+    "stop": 1759839605507,
+    "status": "passed",
+    "statusDetails": {
+        "known": null,
+        "muted": null,
+        "flaky": null,
+        "message": null,
+        "trace": null
+    },
+    "stage": "finished",
+    "steps": [
+        {
+            "name": "Passo 1: Executar o cálculo da média",
+            "description": null,
+            "descriptionHtml": null,
+            "start": 1759839605487,
+            "stop": 1759839605487,
+            "status": "passed",
+            "statusDetails": null,
+            "stage": "finished",
+            "steps": [],
+            "attachments": [],
+            "parameters": []
+        },
+        {
+            "name": "Passo 2: Verificar os resultados",
+            "description": null,
+            "descriptionHtml": null,
+            "start": 1759839605487,
+            "stop": 1759839605506,
+            "status": "passed",
+            "statusDetails": null,
+            "stage": "finished",
+            "steps": [],
+            "attachments": [],
+            "parameters": []
+        }
+    ],
+    "attachments": [],
+    "parameters": [
+        {
+            "name": "Nota 1",
+            "value": "7",
+            "excluded": false,
+            "mode": null
+        },
+        {
+            "name": "Nota 2",
+            "value": "8",
+            "excluded": false,
+            "mode": null
+        },
+        {
+            "name": "Nota 3",
+            "value": "9",
+            "excluded": false,
+            "mode": null
+        },
+        {
+            "name": "Nota Mínima",
+            "value": "8",
+            "excluded": false,
+            "mode": null
+        }
+    ],
+    "historyId": "0d2a02dedf323deedab73d2d2be24f2f",
+    "testCaseId": "4fad3807df557c4a6e73bb37ea478533",
+    "rerunOf": null,
+    "fullName": "NotesTest::it_should_be_able_to_calculate_media_and_approval",
+    "labels": [
+        {
+            "name": "testClass",
+            "value": "NotesTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "it_should_be_able_to_calculate_media_and_approval"
+        },
+        {
+            "name": "host",
+            "value": "C308-LB5-010"
+        },
+        {
+            "name": "thread",
+            "value": null
+        },
+        {
+            "name": "severity",
+            "value": "critical"
+        },
+        {
+            "name": "story",
+            "value": "Cálculo de Média"
+        },
+        {
+            "name": "feature",
+            "value": "Gerenciamento de Notas"
+        }
+    ],
+    "links": []
+}

@@ -1,10 +1,10 @@
 {
-    "uuid": "c5b790b0-f511-4c56-9f7b-3e85d9fa138b",
-    "name": "Deve verificar corretamente o status de \"logado\"",
-    "description": "Testa a função isLoggedIn para garantir que ela retorna verdadeiro quando um ID de usuário existe na sessão.",
+    "uuid": "d3195d81-1506-4051-9bfd-5638875e64dd",
+    "name": "Deve realizar o login com credenciais válidas",
+    "description": "Simula um login bem-sucedido, verificando se a função retorna verdadeiro e se os dados do usuário são armazenados na sessão.",
     "descriptionHtml": null,
-    "start": 1759838625438,
-    "stop": 1759838625438,
+    "start": 1759839605259,
+    "stop": 1759839605390,
     "status": "passed",
     "statusDetails": {
         "known": null,
@@ -16,11 +16,11 @@
     "stage": "finished",
     "steps": [
         {
-            "name": "Passo 1: Simular uma sessão ativa",
+            "name": "Passo 1: Configurar o mock com dados de um usuário existente",
             "description": null,
             "descriptionHtml": null,
-            "start": 1759838625438,
-            "stop": 1759838625438,
+            "start": 1759839605259,
+            "stop": 1759839605313,
             "status": "passed",
             "statusDetails": null,
             "stage": "finished",
@@ -29,11 +29,11 @@
             "parameters": []
         },
         {
-            "name": "Passo 2: Chamar o método de verificação",
+            "name": "Passo 2: Executar a tentativa de login",
             "description": null,
             "descriptionHtml": null,
-            "start": 1759838625438,
-            "stop": 1759838625438,
+            "start": 1759839605313,
+            "stop": 1759839605366,
             "status": "passed",
             "statusDetails": null,
             "stage": "finished",
@@ -42,11 +42,11 @@
             "parameters": []
         },
         {
-            "name": "Passo 3: Validar o resultado",
+            "name": "Passo 3: Verificar o sucesso do login e os dados da sessão",
             "description": null,
             "descriptionHtml": null,
-            "start": 1759838625438,
-            "stop": 1759838625438,
+            "start": 1759839605366,
+            "stop": 1759839605390,
             "status": "passed",
             "statusDetails": null,
             "stage": "finished",
@@ -57,10 +57,10 @@
     ],
     "attachments": [],
     "parameters": [],
-    "historyId": "96db153a3b60ecf8101b8b71ba414fbe",
-    "testCaseId": "c813de96e09c65c2da1cc0c216516ccc",
+    "historyId": "7e28e501deb05d3446b7f088ed67b4d5",
+    "testCaseId": "ad1c863f4279f110e91fab21e4c65d48",
     "rerunOf": null,
-    "fullName": "UserTest::It_should_verify_if_is_logged_in",
+    "fullName": "UserTest::it_should_be_able_to_sign_in",
     "labels": [
         {
             "name": "testClass",
@@ -68,7 +68,7 @@
         },
         {
             "name": "testMethod",
-            "value": "It_should_verify_if_is_logged_in"
+            "value": "it_should_be_able_to_sign_in"
         },
         {
             "name": "host",
@@ -80,11 +80,11 @@
         },
         {
             "name": "severity",
-            "value": "normal"
+            "value": "blocker"
         },
         {
             "name": "story",
-            "value": "Sessão de Usuário"
+            "value": "Login de Usuário"
         },
         {
             "name": "feature",
