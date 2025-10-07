@@ -1,0 +1,82 @@
+{
+    "uuid": "cf497b27-1c73-4fbd-a5c3-383fe8d496a7",
+    "name": "Deve ser capaz de salvar a média calculada",
+    "description": null,
+    "descriptionHtml": null,
+    "start": 1759838625203,
+    "stop": 1759838625209,
+    "status": "passed",
+    "statusDetails": {
+        "known": null,
+        "muted": null,
+        "flaky": null,
+        "message": null,
+        "trace": null
+    },
+    "stage": "finished",
+    "steps": [
+        {
+            "name": "Passo 1: Calcular a média primeiro",
+            "description": null,
+            "descriptionHtml": null,
+            "start": 1759838625203,
+            "stop": 1759838625203,
+            "status": "passed",
+            "statusDetails": null,
+            "stage": "finished",
+            "steps": [],
+            "attachments": [],
+            "parameters": []
+        },
+        {
+            "name": "Passo 2: Configurar mock e salvar os dados",
+            "description": null,
+            "descriptionHtml": null,
+            "start": 1759838625203,
+            "stop": 1759838625209,
+            "status": "passed",
+            "statusDetails": null,
+            "stage": "finished",
+            "steps": [],
+            "attachments": [],
+            "parameters": []
+        }
+    ],
+    "attachments": [],
+    "parameters": [],
+    "historyId": "b12b98478dabcc9c2ec996471d7b3724",
+    "testCaseId": "53c3f5bfdaabb88f9175751f23a5e58e",
+    "rerunOf": null,
+    "fullName": "NotesTest::it_should_be_able_to_save_media",
+    "labels": [
+        {
+            "name": "testClass",
+            "value": "NotesTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "it_should_be_able_to_save_media"
+        },
+        {
+            "name": "host",
+            "value": "C308-LB5-010"
+        },
+        {
+            "name": "thread",
+            "value": null
+        },
+        {
+            "name": "severity",
+            "value": "critical"
+        },
+        {
+            "name": "story",
+            "value": "Persistência de Dados"
+        },
+        {
+            "name": "feature",
+            "value": "Gerenciamento de Notas"
+        }
+    ],
+    "links": []
+}

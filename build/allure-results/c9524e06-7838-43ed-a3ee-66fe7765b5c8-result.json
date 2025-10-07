@@ -1,0 +1,95 @@
+{
+    "uuid": "c9524e06-7838-43ed-a3ee-66fe7765b5c8",
+    "name": "Deve registrar um novo usuário com sucesso",
+    "description": "Verifica se um usuário pode ser criado com dados válidos e o método de registro retorna verdadeiro.",
+    "descriptionHtml": null,
+    "start": 1759838625440,
+    "stop": 1759838625440,
+    "status": "passed",
+    "statusDetails": {
+        "known": null,
+        "muted": null,
+        "flaky": null,
+        "message": null,
+        "trace": null
+    },
+    "stage": "finished",
+    "steps": [
+        {
+            "name": "Passo 1: Configurar o mock para simular sucesso no registro",
+            "description": null,
+            "descriptionHtml": null,
+            "start": 1759838625440,
+            "stop": 1759838625440,
+            "status": "passed",
+            "statusDetails": null,
+            "stage": "finished",
+            "steps": [],
+            "attachments": [],
+            "parameters": []
+        },
+        {
+            "name": "Passo 2: Chamar o método de criação de usuário",
+            "description": null,
+            "descriptionHtml": null,
+            "start": 1759838625440,
+            "stop": 1759838625440,
+            "status": "passed",
+            "statusDetails": null,
+            "stage": "finished",
+            "steps": [],
+            "attachments": [],
+            "parameters": []
+        },
+        {
+            "name": "Passo 3: Verificar se o resultado é verdadeiro",
+            "description": null,
+            "descriptionHtml": null,
+            "start": 1759838625440,
+            "stop": 1759838625440,
+            "status": "passed",
+            "statusDetails": null,
+            "stage": "finished",
+            "steps": [],
+            "attachments": [],
+            "parameters": []
+        }
+    ],
+    "attachments": [],
+    "parameters": [],
+    "historyId": "8e0b7d66f700ef72776ba885e80832c8",
+    "testCaseId": "b9955d149d43bebd8673157ae60cecfa",
+    "rerunOf": null,
+    "fullName": "UserTest::it_should_register_users_with_valid_credentials",
+    "labels": [
+        {
+            "name": "testClass",
+            "value": "UserTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "it_should_register_users_with_valid_credentials"
+        },
+        {
+            "name": "host",
+            "value": "C308-LB5-010"
+        },
+        {
+            "name": "thread",
+            "value": null
+        },
+        {
+            "name": "severity",
+            "value": "critical"
+        },
+        {
+            "name": "story",
+            "value": "Registro de Usuário"
+        },
+        {
+            "name": "feature",
+            "value": "Autenticação de Usuário"
+        }
+    ],
+    "links": []
+}

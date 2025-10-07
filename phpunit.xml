@@ -8,26 +8,16 @@
          cacheResult="true"
          beStrictAboutTestsThatDoNotTestAnything="true">
 
+  <extensions>
+    <bootstrap class="Qameta\Allure\PHPUnit\AllureExtension">
+      <parameter name="config" value="Config/allure.config.php"/>
+    </bootstrap>
+  </extensions>
+
   <testsuites>
     <testsuite name="Testes do Projeto">
       <directory>tests</directory>
     </testsuite>
   </testsuites>
-  
-    <source>
-      <include>
-        <!-- Aqui você define o que será rastreado -->
-        <directory suffix=".php">./Controller</directory>
-      </include>
-    </source>
-
-  <coverage>
-    <report>
-      <html outputDirectory="tests/_reports/coverage-html"/>
-      <clover outputFile="tests/_reports/clover.xml"/>
-      <xml outputDirectory="tests/_reports/coverage-xml"/>
-      <text outputFile="tests/_reports/coverage.txt"/>
-    </report>
-  </coverage>
 
 </phpunit>

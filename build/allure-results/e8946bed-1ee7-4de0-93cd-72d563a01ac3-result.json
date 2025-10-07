@@ -1,0 +1,95 @@
+{
+    "uuid": "e8946bed-1ee7-4de0-93cd-72d563a01ac3",
+    "name": "Não deve realizar o login com credenciais inválidas",
+    "description": "Verifica se o sistema nega o acesso quando a senha ou o email estão incorretos.",
+    "descriptionHtml": null,
+    "start": 1759838625329,
+    "stop": 1759838625436,
+    "status": "passed",
+    "statusDetails": {
+        "known": null,
+        "muted": null,
+        "flaky": null,
+        "message": null,
+        "trace": null
+    },
+    "stage": "finished",
+    "steps": [
+        {
+            "name": "Passo 1: Configurar o mock para retornar um usuário qualquer",
+            "description": null,
+            "descriptionHtml": null,
+            "start": 1759838625329,
+            "stop": 1759838625383,
+            "status": "passed",
+            "statusDetails": null,
+            "stage": "finished",
+            "steps": [],
+            "attachments": [],
+            "parameters": []
+        },
+        {
+            "name": "Passo 2: Tentar logar com a senha errada",
+            "description": null,
+            "descriptionHtml": null,
+            "start": 1759838625383,
+            "stop": 1759838625436,
+            "status": "passed",
+            "statusDetails": null,
+            "stage": "finished",
+            "steps": [],
+            "attachments": [],
+            "parameters": []
+        },
+        {
+            "name": "Passo 3: Verificar se o login falhou",
+            "description": null,
+            "descriptionHtml": null,
+            "start": 1759838625436,
+            "stop": 1759838625436,
+            "status": "passed",
+            "statusDetails": null,
+            "stage": "finished",
+            "steps": [],
+            "attachments": [],
+            "parameters": []
+        }
+    ],
+    "attachments": [],
+    "parameters": [],
+    "historyId": "152a892a240fa853f8b62cd5b406f83d",
+    "testCaseId": "7dc4db181ffafb464cb4932769104e2f",
+    "rerunOf": null,
+    "fullName": "UserTest::it_shouldnt_login_with_invalid_credentials",
+    "labels": [
+        {
+            "name": "testClass",
+            "value": "UserTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "it_shouldnt_login_with_invalid_credentials"
+        },
+        {
+            "name": "host",
+            "value": "C308-LB5-010"
+        },
+        {
+            "name": "thread",
+            "value": null
+        },
+        {
+            "name": "severity",
+            "value": "critical"
+        },
+        {
+            "name": "story",
+            "value": "Login de Usuário"
+        },
+        {
+            "name": "feature",
+            "value": "Autenticação de Usuário"
+        }
+    ],
+    "links": []
+}

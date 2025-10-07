@@ -1,0 +1,108 @@
+{
+    "uuid": "8c5a516d-cefd-49f7-b0da-bc00c49a0a24",
+    "name": "Não deve calcular a média com entradas negativas",
+    "description": null,
+    "descriptionHtml": null,
+    "start": 1759838625186,
+    "stop": 1759838625193,
+    "status": "passed",
+    "statusDetails": {
+        "known": null,
+        "muted": null,
+        "flaky": null,
+        "message": null,
+        "trace": null
+    },
+    "stage": "finished",
+    "steps": [
+        {
+            "name": "Testando com a primeira nota negativa",
+            "description": null,
+            "descriptionHtml": null,
+            "start": 1759838625187,
+            "stop": 1759838625189,
+            "status": "passed",
+            "statusDetails": null,
+            "stage": "finished",
+            "steps": [],
+            "attachments": [],
+            "parameters": []
+        },
+        {
+            "name": "Testando com a segunda nota negativa",
+            "description": null,
+            "descriptionHtml": null,
+            "start": 1759838625189,
+            "stop": 1759838625189,
+            "status": "passed",
+            "statusDetails": null,
+            "stage": "finished",
+            "steps": [],
+            "attachments": [],
+            "parameters": []
+        },
+        {
+            "name": "Testando com a terceira nota negativa",
+            "description": null,
+            "descriptionHtml": null,
+            "start": 1759838625189,
+            "stop": 1759838625189,
+            "status": "passed",
+            "statusDetails": null,
+            "stage": "finished",
+            "steps": [],
+            "attachments": [],
+            "parameters": []
+        },
+        {
+            "name": "Testando com a nota mínima negativa",
+            "description": null,
+            "descriptionHtml": null,
+            "start": 1759838625189,
+            "stop": 1759838625189,
+            "status": "passed",
+            "statusDetails": null,
+            "stage": "finished",
+            "steps": [],
+            "attachments": [],
+            "parameters": []
+        }
+    ],
+    "attachments": [],
+    "parameters": [],
+    "historyId": "7e15d594047e348b417029d25263a1bd",
+    "testCaseId": "4530b07062b8a5b85b1742672a40397b",
+    "rerunOf": null,
+    "fullName": "NotesTest::it_shouldnt_be_able_to_calculate_media_and_approval_with_invalid_inputs",
+    "labels": [
+        {
+            "name": "testClass",
+            "value": "NotesTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "it_shouldnt_be_able_to_calculate_media_and_approval_with_invalid_inputs"
+        },
+        {
+            "name": "host",
+            "value": "C308-LB5-010"
+        },
+        {
+            "name": "thread",
+            "value": null
+        },
+        {
+            "name": "severity",
+            "value": "normal"
+        },
+        {
+            "name": "story",
+            "value": "Validação de Entradas"
+        },
+        {
+            "name": "feature",
+            "value": "Gerenciamento de Notas"
+        }
+    ],
+    "links": []
+}

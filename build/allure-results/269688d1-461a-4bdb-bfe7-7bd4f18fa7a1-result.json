@@ -1,0 +1,82 @@
+{
+    "uuid": "269688d1-461a-4bdb-bfe7-7bd4f18fa7a1",
+    "name": "Deve retornar o status de aprovação correto (Aprovado\/Reprovado)",
+    "description": null,
+    "descriptionHtml": null,
+    "start": 1759838625199,
+    "stop": 1759838625201,
+    "status": "passed",
+    "statusDetails": {
+        "known": null,
+        "muted": null,
+        "flaky": null,
+        "message": null,
+        "trace": null
+    },
+    "stage": "finished",
+    "steps": [
+        {
+            "name": "Verificando o status \"APROVADO\"",
+            "description": null,
+            "descriptionHtml": null,
+            "start": 1759838625199,
+            "stop": 1759838625201,
+            "status": "passed",
+            "statusDetails": null,
+            "stage": "finished",
+            "steps": [],
+            "attachments": [],
+            "parameters": []
+        },
+        {
+            "name": "Verificando o status \"REPROVADO\"",
+            "description": null,
+            "descriptionHtml": null,
+            "start": 1759838625201,
+            "stop": 1759838625201,
+            "status": "passed",
+            "statusDetails": null,
+            "stage": "finished",
+            "steps": [],
+            "attachments": [],
+            "parameters": []
+        }
+    ],
+    "attachments": [],
+    "parameters": [],
+    "historyId": "6d3740fc652121a31a1b4a85edbe31db",
+    "testCaseId": "c0bddc00b2d6020639bb159ae5ff0a36",
+    "rerunOf": null,
+    "fullName": "NotesTest::it_should_be_able_to_get_approval",
+    "labels": [
+        {
+            "name": "testClass",
+            "value": "NotesTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "it_should_be_able_to_get_approval"
+        },
+        {
+            "name": "host",
+            "value": "C308-LB5-010"
+        },
+        {
+            "name": "thread",
+            "value": null
+        },
+        {
+            "name": "severity",
+            "value": "critical"
+        },
+        {
+            "name": "story",
+            "value": "Cálculo de Média"
+        },
+        {
+            "name": "feature",
+            "value": "Gerenciamento de Notas"
+        }
+    ],
+    "links": []
+}

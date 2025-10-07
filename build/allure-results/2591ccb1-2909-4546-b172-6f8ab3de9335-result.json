@@ -1,0 +1,95 @@
+{
+    "uuid": "2591ccb1-2909-4546-b172-6f8ab3de9335",
+    "name": "Deve realizar o login com credenciais válidas",
+    "description": "Simula um login bem-sucedido, verificando se a função retorna verdadeiro e se os dados do usuário são armazenados na sessão.",
+    "descriptionHtml": null,
+    "start": 1759838625216,
+    "stop": 1759838625325,
+    "status": "passed",
+    "statusDetails": {
+        "known": null,
+        "muted": null,
+        "flaky": null,
+        "message": null,
+        "trace": null
+    },
+    "stage": "finished",
+    "steps": [
+        {
+            "name": "Passo 1: Configurar o mock com dados de um usuário existente",
+            "description": null,
+            "descriptionHtml": null,
+            "start": 1759838625216,
+            "stop": 1759838625272,
+            "status": "passed",
+            "statusDetails": null,
+            "stage": "finished",
+            "steps": [],
+            "attachments": [],
+            "parameters": []
+        },
+        {
+            "name": "Passo 2: Executar a tentativa de login",
+            "description": null,
+            "descriptionHtml": null,
+            "start": 1759838625272,
+            "stop": 1759838625325,
+            "status": "passed",
+            "statusDetails": null,
+            "stage": "finished",
+            "steps": [],
+            "attachments": [],
+            "parameters": []
+        },
+        {
+            "name": "Passo 3: Verificar o sucesso do login e os dados da sessão",
+            "description": null,
+            "descriptionHtml": null,
+            "start": 1759838625325,
+            "stop": 1759838625325,
+            "status": "passed",
+            "statusDetails": null,
+            "stage": "finished",
+            "steps": [],
+            "attachments": [],
+            "parameters": []
+        }
+    ],
+    "attachments": [],
+    "parameters": [],
+    "historyId": "7e28e501deb05d3446b7f088ed67b4d5",
+    "testCaseId": "ad1c863f4279f110e91fab21e4c65d48",
+    "rerunOf": null,
+    "fullName": "UserTest::it_should_be_able_to_sign_in",
+    "labels": [
+        {
+            "name": "testClass",
+            "value": "UserTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "it_should_be_able_to_sign_in"
+        },
+        {
+            "name": "host",
+            "value": "C308-LB5-010"
+        },
+        {
+            "name": "thread",
+            "value": null
+        },
+        {
+            "name": "severity",
+            "value": "blocker"
+        },
+        {
+            "name": "story",
+            "value": "Login de Usuário"
+        },
+        {
+            "name": "feature",
+            "value": "Autenticação de Usuário"
+        }
+    ],
+    "links": []
+}

@@ -6,8 +6,18 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Yandex\\Allure\\Adapter\\' => array($vendorDir . '/allure-framework/allure-php-commons/src/Legacy'),
+    'Symfony\\Polyfill\\Ctype\\' => array($vendorDir . '/symfony/polyfill-ctype'),
+    'Ramsey\\Uuid\\' => array($vendorDir . '/ramsey/uuid/src'),
+    'Qameta\\Allure\\PHPUnit\\' => array($vendorDir . '/allure-framework/allure-phpunit/src'),
+    'Qameta\\Allure\\' => array($vendorDir . '/allure-framework/allure-php-commons/src'),
+    'Psr\\Log\\' => array($vendorDir . '/psr/log/src'),
+    'Psr\\Cache\\' => array($vendorDir . '/psr/cache/src'),
     'PhpParser\\' => array($vendorDir . '/nikic/php-parser/lib/PhpParser'),
     'Model\\' => array($baseDir . '/Model'),
+    'Doctrine\\Deprecations\\' => array($vendorDir . '/doctrine/deprecations/src'),
+    'Doctrine\\Common\\Lexer\\' => array($vendorDir . '/doctrine/lexer/src'),
+    'Doctrine\\Common\\Annotations\\' => array($vendorDir . '/doctrine/annotations/lib/Doctrine/Common/Annotations'),
     'DeepCopy\\' => array($vendorDir . '/myclabs/deep-copy/src/DeepCopy'),
     'Controller\\' => array($baseDir . '/Controller'),
     'Ana\\Fitcalc\\' => array($baseDir . '/fitCalc'),

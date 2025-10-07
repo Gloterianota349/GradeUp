@@ -1,0 +1,95 @@
+{
+    "uuid": "c5b790b0-f511-4c56-9f7b-3e85d9fa138b",
+    "name": "Deve verificar corretamente o status de \"logado\"",
+    "description": "Testa a função isLoggedIn para garantir que ela retorna verdadeiro quando um ID de usuário existe na sessão.",
+    "descriptionHtml": null,
+    "start": 1759838625438,
+    "stop": 1759838625438,
+    "status": "passed",
+    "statusDetails": {
+        "known": null,
+        "muted": null,
+        "flaky": null,
+        "message": null,
+        "trace": null
+    },
+    "stage": "finished",
+    "steps": [
+        {
+            "name": "Passo 1: Simular uma sessão ativa",
+            "description": null,
+            "descriptionHtml": null,
+            "start": 1759838625438,
+            "stop": 1759838625438,
+            "status": "passed",
+            "statusDetails": null,
+            "stage": "finished",
+            "steps": [],
+            "attachments": [],
+            "parameters": []
+        },
+        {
+            "name": "Passo 2: Chamar o método de verificação",
+            "description": null,
+            "descriptionHtml": null,
+            "start": 1759838625438,
+            "stop": 1759838625438,
+            "status": "passed",
+            "statusDetails": null,
+            "stage": "finished",
+            "steps": [],
+            "attachments": [],
+            "parameters": []
+        },
+        {
+            "name": "Passo 3: Validar o resultado",
+            "description": null,
+            "descriptionHtml": null,
+            "start": 1759838625438,
+            "stop": 1759838625438,
+            "status": "passed",
+            "statusDetails": null,
+            "stage": "finished",
+            "steps": [],
+            "attachments": [],
+            "parameters": []
+        }
+    ],
+    "attachments": [],
+    "parameters": [],
+    "historyId": "96db153a3b60ecf8101b8b71ba414fbe",
+    "testCaseId": "c813de96e09c65c2da1cc0c216516ccc",
+    "rerunOf": null,
+    "fullName": "UserTest::It_should_verify_if_is_logged_in",
+    "labels": [
+        {
+            "name": "testClass",
+            "value": "UserTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "It_should_verify_if_is_logged_in"
+        },
+        {
+            "name": "host",
+            "value": "C308-LB5-010"
+        },
+        {
+            "name": "thread",
+            "value": null
+        },
+        {
+            "name": "severity",
+            "value": "normal"
+        },
+        {
+            "name": "story",
+            "value": "Sessão de Usuário"
+        },
+        {
+            "name": "feature",
+            "value": "Autenticação de Usuário"
+        }
+    ],
+    "links": []
+}
