@@ -3,11 +3,15 @@
 session_start();
 require_once '../vendor/autoload.php';
 
+use Model\User;
+use Model\Notes;
 use Controller\NotesController;
 use Controller\UserController;
 
-$mediaController = new NotesController();
-$userController = new UserController();
+$notes = new Notes();
+$userModel = new User();
+$mediaController = new NotesController($notesModel);
+$userController = new UserController($userModel);
 
 $mediaResult = null;
 $userInfo = null;
