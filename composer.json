@@ -1,10 +1,10 @@
 {
-    "name": "guilherme/gradeup",
-    "description": "Calculadora de notas",
+    "name": "ana/fitcalc",
+    "description": "Calculadora de IMC",
     "type": "project",
     "autoload": {
         "psr-4": {
-            "Guilherme\\GradeUp\\": "GradeUp/",
+            "Ana\\Fitcalc\\": "fitCalc/",
             "Controller\\": "Controller/",
             "Model\\": "Model/"
         },
@@ -16,12 +16,11 @@
         ]
     },
     "minimum-stability": "dev",
-    "config": {
-        "platform": {
-            "php": "8.2.12"
-        }
+    "require": {
+        "php": ">= 8.0",
+        "ext-mbstring": "*"
     },
     "require-dev": {
-        "phpunit/phpunit": "11.5.x-dev"
+        "phpunit/phpunit": "12"
     }
 }

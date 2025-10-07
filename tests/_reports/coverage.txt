@@ -1,0 +1,14 @@
+
+
+[1;37;40mCode Coverage Report:    [0m
+[1;37;40m  2025-10-07 00:02:17    [0m
+[1;37;40m                         [0m
+[1;37;40m Summary:                [0m
+[37;41m  Classes:  0.00% (0/2)  [0m
+[30;43m  Methods: 55.56% (5/9)  [0m
+[30;43m  Lines:   78.12% (25/32)[0m
+
+Controller\NotesController
+  [30;43mMethods:  66.67% ( 2/ 3)[0m   [30;43mLines:  77.78% ( 14/ 18)[0m
+Controller\UserController
+  [37;41mMethods:  50.00% ( 3/ 6)[0m   [30;43mLines:  78.57% ( 11/ 14)[0m

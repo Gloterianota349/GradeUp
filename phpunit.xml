@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="vendor/autoload.php"
+         colors="true"
+         stopOnFailure="false"
+         failOnRisky="true"
+         failOnWarning="true"
+         executionOrder="random"
+         cacheResult="true"
+         beStrictAboutTestsThatDoNotTestAnything="true">
+
+  <testsuites>
+    <testsuite name="Testes do Projeto">
+      <directory>tests</directory>
+    </testsuite>
+  </testsuites>
+  
+    <source>
+      <include>
+        <!-- Aqui você define o que será rastreado -->
+        <directory suffix=".php">./Controller</directory>
+      </include>
+    </source>
+
+  <coverage>
+    <report>
+      <html outputDirectory="tests/_reports/coverage-html"/>
+      <clover outputFile="tests/_reports/clover.xml"/>
+      <xml outputDirectory="tests/_reports/coverage-xml"/>
+      <text outputFile="tests/_reports/coverage.txt"/>
+    </report>
+  </coverage>
+
+</phpunit>

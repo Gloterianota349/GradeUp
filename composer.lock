@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f5a5ea2f7f327efcc6c4b8cb00b7e76f",
+    "content-hash": "ece2f16b7a0ee95542b3eb86c6059fc6",
     "packages": [],
     "packages-dev": [
         {
@@ -248,16 +248,16 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "11.0.x-dev",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "c46078be0a099f555ec9a3e0615b924e8cc01d26"
+                "reference": "98384864722106029944f669cc51668a0de2717a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/c46078be0a099f555ec9a3e0615b924e8cc01d26",
-                "reference": "c46078be0a099f555ec9a3e0615b924e8cc01d26",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/98384864722106029944f669cc51668a0de2717a",
+                "reference": "98384864722106029944f669cc51668a0de2717a",
                 "shasum": ""
             },
             "require": {
@@ -265,27 +265,27 @@
                 "ext-libxml": "*",
                 "ext-xmlwriter": "*",
                 "nikic/php-parser": "^5.6.1",
-                "php": ">=8.2",
-                "phpunit/php-file-iterator": "^5.1.0",
-                "phpunit/php-text-template": "^4.0.1",
-                "sebastian/code-unit-reverse-lookup": "^4.0.1",
-                "sebastian/complexity": "^4.0.1",
-                "sebastian/environment": "^7.2.1",
-                "sebastian/lines-of-code": "^3.0.1",
-                "sebastian/version": "^5.0.2",
+                "php": ">=8.3",
+                "phpunit/php-file-iterator": "^6.0",
+                "phpunit/php-text-template": "^5.0",
+                "sebastian/complexity": "^5.0",
+                "sebastian/environment": "^8.0.3",
+                "sebastian/lines-of-code": "^4.0",
+                "sebastian/version": "^6.0",
                 "theseer/tokenizer": "^1.2.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^11.5.35"
+                "phpunit/phpunit": "^12.3.7"
             },
             "suggest": {
                 "ext-pcov": "PHP extension that provides line coverage",
                 "ext-xdebug": "PHP extension that provides line coverage as well as branch and path coverage"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "11.0.x-dev"
+                    "dev-main": "12.4.x-dev"
                 }
             },
             "autoload": {
@@ -314,7 +314,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-code-coverage/issues",
                 "security": "https://github.com/sebastianbergmann/php-code-coverage/security/policy",
-                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/11.0"
+                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/main"
             },
             "funding": [
                 {
@@ -334,32 +334,33 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-09-26T13:00:37+00:00"
+            "time": "2025-09-26T13:02:34+00:00"
         },
         {
             "name": "phpunit/php-file-iterator",
-            "version": "5.1.x-dev",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-file-iterator.git",
-                "reference": "18a3d4f3af59807625ae982d88b27085ad38c367"
+                "reference": "b141834426cf398b3842ad514710cc15993830b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-file-iterator/zipball/18a3d4f3af59807625ae982d88b27085ad38c367",
-                "reference": "18a3d4f3af59807625ae982d88b27085ad38c367",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-file-iterator/zipball/b141834426cf398b3842ad514710cc15993830b7",
+                "reference": "b141834426cf398b3842ad514710cc15993830b7",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.2"
+                "php": ">=8.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^11.3"
+                "phpunit/phpunit": "^12.0"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "5.1-dev"
+                    "dev-main": "6.0-dev"
                 }
             },
             "autoload": {
@@ -387,7 +388,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-file-iterator/issues",
                 "security": "https://github.com/sebastianbergmann/php-file-iterator/security/policy",
-                "source": "https://github.com/sebastianbergmann/php-file-iterator/tree/5.1"
+                "source": "https://github.com/sebastianbergmann/php-file-iterator/tree/main"
             },
             "funding": [
                 {
@@ -407,36 +408,37 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-09-26T11:52:35+00:00"
+            "time": "2025-09-26T11:54:35+00:00"
         },
         {
             "name": "phpunit/php-invoker",
-            "version": "5.0.x-dev",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-invoker.git",
-                "reference": "cdf46882fb81433d671ed4ba64c62da7e62b1f12"
+                "reference": "11785bf0cbc64eb1b089a3f22c31e0f17ace93f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-invoker/zipball/cdf46882fb81433d671ed4ba64c62da7e62b1f12",
-                "reference": "cdf46882fb81433d671ed4ba64c62da7e62b1f12",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-invoker/zipball/11785bf0cbc64eb1b089a3f22c31e0f17ace93f8",
+                "reference": "11785bf0cbc64eb1b089a3f22c31e0f17ace93f8",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.2"
+                "php": ">=8.3"
             },
             "require-dev": {
                 "ext-pcntl": "*",
-                "phpunit/phpunit": "^11.3"
+                "phpunit/phpunit": "^12.0"
             },
             "suggest": {
                 "ext-pcntl": "*"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "5.0-dev"
+                    "dev-main": "6.0-dev"
                 }
             },
             "autoload": {
@@ -463,7 +465,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-invoker/issues",
                 "security": "https://github.com/sebastianbergmann/php-invoker/security/policy",
-                "source": "https://github.com/sebastianbergmann/php-invoker/tree/5.0"
+                "source": "https://github.com/sebastianbergmann/php-invoker/tree/main"
             },
             "funding": [
                 {
@@ -483,32 +485,33 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-09-26T11:56:54+00:00"
+            "time": "2025-09-26T11:58:40+00:00"
         },
         {
             "name": "phpunit/php-text-template",
-            "version": "4.0.x-dev",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-text-template.git",
-                "reference": "51c29005b7c2781f72381ff01a2fe79be7096d29"
+                "reference": "8afd12ba4cbf06b65a0a2336f0e796bc4b0f986d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-text-template/zipball/51c29005b7c2781f72381ff01a2fe79be7096d29",
-                "reference": "51c29005b7c2781f72381ff01a2fe79be7096d29",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-text-template/zipball/8afd12ba4cbf06b65a0a2336f0e796bc4b0f986d",
+                "reference": "8afd12ba4cbf06b65a0a2336f0e796bc4b0f986d",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.2"
+                "php": ">=8.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^11.3"
+                "phpunit/phpunit": "^12.0"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "4.0-dev"
+                    "dev-main": "5.0-dev"
                 }
             },
             "autoload": {
@@ -535,7 +538,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-text-template/issues",
                 "security": "https://github.com/sebastianbergmann/php-text-template/security/policy",
-                "source": "https://github.com/sebastianbergmann/php-text-template/tree/4.0"
+                "source": "https://github.com/sebastianbergmann/php-text-template/tree/main"
             },
             "funding": [
                 {
@@ -555,32 +558,33 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-09-26T12:02:43+00:00"
+            "time": "2025-09-26T12:04:00+00:00"
         },
         {
             "name": "phpunit/php-timer",
-            "version": "7.0.x-dev",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-timer.git",
-                "reference": "97eee3cc4868bb1ae61a59cd95aff98c52d43def"
+                "reference": "6e392b79f23b813fa3ebdc33f3de8e8f68820353"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-timer/zipball/97eee3cc4868bb1ae61a59cd95aff98c52d43def",
-                "reference": "97eee3cc4868bb1ae61a59cd95aff98c52d43def",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-timer/zipball/6e392b79f23b813fa3ebdc33f3de8e8f68820353",
+                "reference": "6e392b79f23b813fa3ebdc33f3de8e8f68820353",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.2"
+                "php": ">=8.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^11.3"
+                "phpunit/phpunit": "^12.0"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "7.0-dev"
+                    "dev-main": "8.0-dev"
                 }
             },
             "autoload": {
@@ -607,7 +611,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-timer/issues",
                 "security": "https://github.com/sebastianbergmann/php-timer/security/policy",
-                "source": "https://github.com/sebastianbergmann/php-timer/tree/7.0"
+                "source": "https://github.com/sebastianbergmann/php-timer/tree/main"
             },
             "funding": [
                 {
@@ -627,20 +631,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-09-26T12:06:24+00:00"
+            "time": "2025-09-26T12:07:45+00:00"
         },
         {
             "name": "phpunit/phpunit",
-            "version": "11.5.x-dev",
+            "version": "12.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "1247f7800ebba6717cdd05a8e73466b7bd0ce98a"
+                "reference": "9912c83b5207ab3730fcadc42992e95bdb02dad8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/1247f7800ebba6717cdd05a8e73466b7bd0ce98a",
-                "reference": "1247f7800ebba6717cdd05a8e73466b7bd0ce98a",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/9912c83b5207ab3730fcadc42992e95bdb02dad8",
+                "reference": "9912c83b5207ab3730fcadc42992e95bdb02dad8",
                 "shasum": ""
             },
             "require": {
@@ -650,29 +654,25 @@
                 "ext-mbstring": "*",
                 "ext-xml": "*",
                 "ext-xmlwriter": "*",
-                "myclabs/deep-copy": "^1.13.4",
+                "myclabs/deep-copy": "^1.12.1",
                 "phar-io/manifest": "^2.0.4",
                 "phar-io/version": "^3.2.1",
-                "php": ">=8.2",
-                "phpunit/php-code-coverage": "^11.0.11",
-                "phpunit/php-file-iterator": "^5.1.0",
-                "phpunit/php-invoker": "^5.0.1",
-                "phpunit/php-text-template": "^4.0.1",
-                "phpunit/php-timer": "^7.0.1",
-                "sebastian/cli-parser": "^3.0.2",
-                "sebastian/code-unit": "^3.0.3",
-                "sebastian/comparator": "^6.3.2",
-                "sebastian/diff": "^6.0.2",
-                "sebastian/environment": "^7.2.1",
-                "sebastian/exporter": "^6.3.2",
-                "sebastian/global-state": "^7.0.2",
-                "sebastian/object-enumerator": "^6.0.1",
-                "sebastian/type": "^5.1.3",
-                "sebastian/version": "^5.0.2",
+                "php": ">=8.3",
+                "phpunit/php-code-coverage": "^12.0.0",
+                "phpunit/php-file-iterator": "^6.0.0",
+                "phpunit/php-invoker": "^6.0.0",
+                "phpunit/php-text-template": "^5.0.0",
+                "phpunit/php-timer": "^8.0.0",
+                "sebastian/cli-parser": "^4.0.0",
+                "sebastian/comparator": "^7.0.0",
+                "sebastian/diff": "^7.0.0",
+                "sebastian/environment": "^8.0.0",
+                "sebastian/exporter": "^7.0.0",
+                "sebastian/global-state": "^8.0.0",
+                "sebastian/object-enumerator": "^7.0.0",
+                "sebastian/type": "^6.0.0",
+                "sebastian/version": "^6.0.0",
                 "staabm/side-effects-detector": "^1.0.5"
-            },
-            "suggest": {
-                "ext-soap": "To be able to generate mocks based on WSDL files"
             },
             "bin": [
                 "phpunit"
@@ -680,7 +680,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "11.5-dev"
+                    "dev-main": "12.0-dev"
                 }
             },
             "autoload": {
@@ -712,7 +712,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/11.5"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/12.0.0"
             },
             "funding": [
                 {
@@ -724,44 +724,37 @@
                     "type": "github"
                 },
                 {
-                    "url": "https://liberapay.com/sebastianbergmann",
-                    "type": "liberapay"
-                },
-                {
-                    "url": "https://thanks.dev/u/gh/sebastianbergmann",
-                    "type": "thanks_dev"
-                },
-                {
                     "url": "https://tidelift.com/funding/github/packagist/phpunit/phpunit",
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-10-06T04:34:27+00:00"
+            "time": "2025-02-07T05:03:33+00:00"
         },
         {
             "name": "sebastian/cli-parser",
-            "version": "3.0.x-dev",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/cli-parser.git",
-                "reference": "3a073702d31bd8bb4f1a010793ac967c6dbc7c85"
+                "reference": "13e61c39b4a79fd74518c7f282c0e053d2ebec92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/cli-parser/zipball/3a073702d31bd8bb4f1a010793ac967c6dbc7c85",
-                "reference": "3a073702d31bd8bb4f1a010793ac967c6dbc7c85",
+                "url": "https://api.github.com/repos/sebastianbergmann/cli-parser/zipball/13e61c39b4a79fd74518c7f282c0e053d2ebec92",
+                "reference": "13e61c39b4a79fd74518c7f282c0e053d2ebec92",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.2"
+                "php": ">=8.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^11.3"
+                "phpunit/phpunit": "^12.0"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "3.0-dev"
+                    "dev-main": "4.2-dev"
                 }
             },
             "autoload": {
@@ -785,7 +778,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/cli-parser/issues",
                 "security": "https://github.com/sebastianbergmann/cli-parser/security/policy",
-                "source": "https://github.com/sebastianbergmann/cli-parser/tree/3.0"
+                "source": "https://github.com/sebastianbergmann/cli-parser/tree/main"
             },
             "funding": [
                 {
@@ -805,178 +798,40 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-09-26T09:03:29+00:00"
-        },
-        {
-            "name": "sebastian/code-unit",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/code-unit.git",
-                "reference": "23caa57776ddcaa35a2965b93d5f4212a2c3a2d9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/code-unit/zipball/23caa57776ddcaa35a2965b93d5f4212a2c3a2d9",
-                "reference": "23caa57776ddcaa35a2965b93d5f4212a2c3a2d9",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=8.2"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^11.5"
-            },
-            "default-branch": true,
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-main": "3.0-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "lead"
-                }
-            ],
-            "description": "Collection of value objects that represent the PHP code units",
-            "homepage": "https://github.com/sebastianbergmann/code-unit",
-            "support": {
-                "issues": "https://github.com/sebastianbergmann/code-unit/issues",
-                "security": "https://github.com/sebastianbergmann/code-unit/security/policy",
-                "source": "https://github.com/sebastianbergmann/code-unit/tree/main"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/sebastianbergmann",
-                    "type": "github"
-                },
-                {
-                    "url": "https://liberapay.com/sebastianbergmann",
-                    "type": "liberapay"
-                },
-                {
-                    "url": "https://thanks.dev/u/gh/sebastianbergmann",
-                    "type": "thanks_dev"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/sebastian/code-unit",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2025-05-25T06:37:26+00:00"
-        },
-        {
-            "name": "sebastian/code-unit-reverse-lookup",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/code-unit-reverse-lookup.git",
-                "reference": "5cf245ed8605ac5c89946e4bcdcbbd1565b19d9f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/code-unit-reverse-lookup/zipball/5cf245ed8605ac5c89946e4bcdcbbd1565b19d9f",
-                "reference": "5cf245ed8605ac5c89946e4bcdcbbd1565b19d9f",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=8.2"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^11.3"
-            },
-            "default-branch": true,
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-main": "4.0-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de"
-                }
-            ],
-            "description": "Looks up which function or method a line of code belongs to",
-            "homepage": "https://github.com/sebastianbergmann/code-unit-reverse-lookup/",
-            "support": {
-                "issues": "https://github.com/sebastianbergmann/code-unit-reverse-lookup/issues",
-                "security": "https://github.com/sebastianbergmann/code-unit-reverse-lookup/security/policy",
-                "source": "https://github.com/sebastianbergmann/code-unit-reverse-lookup/tree/main"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/sebastianbergmann",
-                    "type": "github"
-                },
-                {
-                    "url": "https://liberapay.com/sebastianbergmann",
-                    "type": "liberapay"
-                },
-                {
-                    "url": "https://thanks.dev/u/gh/sebastianbergmann",
-                    "type": "thanks_dev"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/sebastian/code-unit-reverse-lookup",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2025-05-25T06:37:50+00:00"
+            "time": "2025-09-26T09:03:38+00:00"
         },
         {
             "name": "sebastian/comparator",
-            "version": "6.3.x-dev",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/comparator.git",
-                "reference": "5bff74a11f16f69c1e9764ff08f12577d9bf8ded"
+                "reference": "2f7e868cdac74c96ea7ee067df6083b8672890ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/5bff74a11f16f69c1e9764ff08f12577d9bf8ded",
-                "reference": "5bff74a11f16f69c1e9764ff08f12577d9bf8ded",
+                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/2f7e868cdac74c96ea7ee067df6083b8672890ee",
+                "reference": "2f7e868cdac74c96ea7ee067df6083b8672890ee",
                 "shasum": ""
             },
             "require": {
                 "ext-dom": "*",
                 "ext-mbstring": "*",
-                "php": ">=8.2",
-                "sebastian/diff": "^6.0",
-                "sebastian/exporter": "^6.0"
+                "php": ">=8.3",
+                "sebastian/diff": "^7.0",
+                "sebastian/exporter": "^7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^11.4"
+                "phpunit/phpunit": "^12.2"
             },
             "suggest": {
                 "ext-bcmath": "For comparing BcMath\\Number objects"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "6.3-dev"
+                    "dev-main": "7.1-dev"
                 }
             },
             "autoload": {
@@ -1016,7 +871,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/comparator/issues",
                 "security": "https://github.com/sebastianbergmann/comparator/security/policy",
-                "source": "https://github.com/sebastianbergmann/comparator/tree/6.3"
+                "source": "https://github.com/sebastianbergmann/comparator/tree/main"
             },
             "funding": [
                 {
@@ -1036,33 +891,34 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-09-26T09:17:19+00:00"
+            "time": "2025-09-26T09:21:08+00:00"
         },
         {
             "name": "sebastian/complexity",
-            "version": "4.0.x-dev",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/complexity.git",
-                "reference": "66dc7be5b87498fc0a94565e3b869515becc6569"
+                "reference": "259ab527b8a1d91d55c4dd6fcd9cbd53881d2d1d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/complexity/zipball/66dc7be5b87498fc0a94565e3b869515becc6569",
-                "reference": "66dc7be5b87498fc0a94565e3b869515becc6569",
+                "url": "https://api.github.com/repos/sebastianbergmann/complexity/zipball/259ab527b8a1d91d55c4dd6fcd9cbd53881d2d1d",
+                "reference": "259ab527b8a1d91d55c4dd6fcd9cbd53881d2d1d",
                 "shasum": ""
             },
             "require": {
                 "nikic/php-parser": "^5.0",
-                "php": ">=8.2"
+                "php": ">=8.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^11.3"
+                "phpunit/phpunit": "^12.0"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "4.0-dev"
+                    "dev-main": "5.0-dev"
                 }
             },
             "autoload": {
@@ -1086,7 +942,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/complexity/issues",
                 "security": "https://github.com/sebastianbergmann/complexity/security/policy",
-                "source": "https://github.com/sebastianbergmann/complexity/tree/4.0"
+                "source": "https://github.com/sebastianbergmann/complexity/tree/main"
             },
             "funding": [
                 {
@@ -1106,33 +962,34 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-09-26T09:28:11+00:00"
+            "time": "2025-09-26T09:30:00+00:00"
         },
         {
             "name": "sebastian/diff",
-            "version": "6.0.x-dev",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/diff.git",
-                "reference": "a42039c742783604f4156c17357f22e335ba5d1c"
+                "reference": "9aff9b4e75e81bbfe6c769be3f393055febf1c6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/a42039c742783604f4156c17357f22e335ba5d1c",
-                "reference": "a42039c742783604f4156c17357f22e335ba5d1c",
+                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/9aff9b4e75e81bbfe6c769be3f393055febf1c6a",
+                "reference": "9aff9b4e75e81bbfe6c769be3f393055febf1c6a",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.2"
+                "php": ">=8.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^11.3",
-                "symfony/process": "^4.2 || ^5"
+                "phpunit/phpunit": "^12.0",
+                "symfony/process": "^7.2"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "6.0-dev"
+                    "dev-main": "7.0-dev"
                 }
             },
             "autoload": {
@@ -1165,7 +1022,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/diff/issues",
                 "security": "https://github.com/sebastianbergmann/diff/security/policy",
-                "source": "https://github.com/sebastianbergmann/diff/tree/6.0"
+                "source": "https://github.com/sebastianbergmann/diff/tree/main"
             },
             "funding": [
                 {
@@ -1185,35 +1042,36 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-09-26T09:40:22+00:00"
+            "time": "2025-09-26T09:46:36+00:00"
         },
         {
             "name": "sebastian/environment",
-            "version": "7.2.x-dev",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/environment.git",
-                "reference": "05faa86b4c0042e122ed6be66766b9bf820775d6"
+                "reference": "353a6fa7e92ca85324a5d7bcdf17a12b3a030353"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/05faa86b4c0042e122ed6be66766b9bf820775d6",
-                "reference": "05faa86b4c0042e122ed6be66766b9bf820775d6",
+                "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/353a6fa7e92ca85324a5d7bcdf17a12b3a030353",
+                "reference": "353a6fa7e92ca85324a5d7bcdf17a12b3a030353",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.2"
+                "php": ">=8.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^11.3"
+                "phpunit/phpunit": "^12.0"
             },
             "suggest": {
                 "ext-posix": "*"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "7.2-dev"
+                    "dev-main": "8.0-dev"
                 }
             },
             "autoload": {
@@ -1241,7 +1099,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/environment/issues",
                 "security": "https://github.com/sebastianbergmann/environment/security/policy",
-                "source": "https://github.com/sebastianbergmann/environment/tree/7.2"
+                "source": "https://github.com/sebastianbergmann/environment/tree/main"
             },
             "funding": [
                 {
@@ -1261,34 +1119,35 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-09-26T09:53:03+00:00"
+            "time": "2025-09-26T09:55:55+00:00"
         },
         {
             "name": "sebastian/exporter",
-            "version": "6.3.x-dev",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/exporter.git",
-                "reference": "c939676885df069c0bc467ca4a1ac7dd367db7a8"
+                "reference": "d4d9bba3c5904cdebea5c9bebab27d8abd6c1af1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/c939676885df069c0bc467ca4a1ac7dd367db7a8",
-                "reference": "c939676885df069c0bc467ca4a1ac7dd367db7a8",
+                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/d4d9bba3c5904cdebea5c9bebab27d8abd6c1af1",
+                "reference": "d4d9bba3c5904cdebea5c9bebab27d8abd6c1af1",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
-                "php": ">=8.2",
-                "sebastian/recursion-context": "^6.0"
+                "php": ">=8.3",
+                "sebastian/recursion-context": "^7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^11.3"
+                "phpunit/phpunit": "^12.0"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "6.3-dev"
+                    "dev-main": "7.0-dev"
                 }
             },
             "autoload": {
@@ -1331,7 +1190,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/exporter/issues",
                 "security": "https://github.com/sebastianbergmann/exporter/security/policy",
-                "source": "https://github.com/sebastianbergmann/exporter/tree/6.3"
+                "source": "https://github.com/sebastianbergmann/exporter/tree/main"
             },
             "funding": [
                 {
@@ -1351,35 +1210,36 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-09-26T11:23:57+00:00"
+            "time": "2025-09-26T11:25:33+00:00"
         },
         {
             "name": "sebastian/global-state",
-            "version": "7.0.x-dev",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/global-state.git",
-                "reference": "88b1eb038ff5daa6f3c2b76bea3cd0ac48626f53"
+                "reference": "a10949d1e386170a423618c690b8efcb2ca56ae2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/global-state/zipball/88b1eb038ff5daa6f3c2b76bea3cd0ac48626f53",
-                "reference": "88b1eb038ff5daa6f3c2b76bea3cd0ac48626f53",
+                "url": "https://api.github.com/repos/sebastianbergmann/global-state/zipball/a10949d1e386170a423618c690b8efcb2ca56ae2",
+                "reference": "a10949d1e386170a423618c690b8efcb2ca56ae2",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.2",
-                "sebastian/object-reflector": "^4.0",
-                "sebastian/recursion-context": "^6.0"
+                "php": ">=8.3",
+                "sebastian/object-reflector": "^5.0",
+                "sebastian/recursion-context": "^7.0"
             },
             "require-dev": {
                 "ext-dom": "*",
-                "phpunit/phpunit": "^11.3"
+                "phpunit/phpunit": "^12.0"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "7.0-dev"
+                    "dev-main": "8.0-dev"
                 }
             },
             "autoload": {
@@ -1405,7 +1265,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/global-state/issues",
                 "security": "https://github.com/sebastianbergmann/global-state/security/policy",
-                "source": "https://github.com/sebastianbergmann/global-state/tree/7.0"
+                "source": "https://github.com/sebastianbergmann/global-state/tree/main"
             },
             "funding": [
                 {
@@ -1425,33 +1285,34 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-09-26T11:31:14+00:00"
+            "time": "2025-09-26T11:32:43+00:00"
         },
         {
             "name": "sebastian/lines-of-code",
-            "version": "3.0.x-dev",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/lines-of-code.git",
-                "reference": "8426f4eebca3f4003616c617b89094be52fc7b16"
+                "reference": "2f9169ba549af53f680e68abb56e62a5f0dee84e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/lines-of-code/zipball/8426f4eebca3f4003616c617b89094be52fc7b16",
-                "reference": "8426f4eebca3f4003616c617b89094be52fc7b16",
+                "url": "https://api.github.com/repos/sebastianbergmann/lines-of-code/zipball/2f9169ba549af53f680e68abb56e62a5f0dee84e",
+                "reference": "2f9169ba549af53f680e68abb56e62a5f0dee84e",
                 "shasum": ""
             },
             "require": {
                 "nikic/php-parser": "^5.0",
-                "php": ">=8.2"
+                "php": ">=8.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^11.3"
+                "phpunit/phpunit": "^12.0"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "3.0-dev"
+                    "dev-main": "4.0-dev"
                 }
             },
             "autoload": {
@@ -1475,7 +1336,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/lines-of-code/issues",
                 "security": "https://github.com/sebastianbergmann/lines-of-code/security/policy",
-                "source": "https://github.com/sebastianbergmann/lines-of-code/tree/3.0"
+                "source": "https://github.com/sebastianbergmann/lines-of-code/tree/main"
             },
             "funding": [
                 {
@@ -1495,34 +1356,35 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-09-26T11:36:26+00:00"
+            "time": "2025-09-26T11:38:29+00:00"
         },
         {
             "name": "sebastian/object-enumerator",
-            "version": "6.0.x-dev",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/object-enumerator.git",
-                "reference": "1748f199f50f7deb6f12c4f08cddc306cf6fd2e2"
+                "reference": "e1cd261f5ea34e8568b3fc827919410292d1ca69"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/object-enumerator/zipball/1748f199f50f7deb6f12c4f08cddc306cf6fd2e2",
-                "reference": "1748f199f50f7deb6f12c4f08cddc306cf6fd2e2",
+                "url": "https://api.github.com/repos/sebastianbergmann/object-enumerator/zipball/e1cd261f5ea34e8568b3fc827919410292d1ca69",
+                "reference": "e1cd261f5ea34e8568b3fc827919410292d1ca69",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.2",
-                "sebastian/object-reflector": "^4.0",
-                "sebastian/recursion-context": "^6.0"
+                "php": ">=8.3",
+                "sebastian/object-reflector": "^5.0",
+                "sebastian/recursion-context": "^7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^11.3"
+                "phpunit/phpunit": "^12.0"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "6.0-dev"
+                    "dev-main": "7.0-dev"
                 }
             },
             "autoload": {
@@ -1545,7 +1407,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/object-enumerator/issues",
                 "security": "https://github.com/sebastianbergmann/object-enumerator/security/policy",
-                "source": "https://github.com/sebastianbergmann/object-enumerator/tree/6.0"
+                "source": "https://github.com/sebastianbergmann/object-enumerator/tree/main"
             },
             "funding": [
                 {
@@ -1565,32 +1427,33 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-09-26T11:41:57+00:00"
+            "time": "2025-09-26T11:43:21+00:00"
         },
         {
             "name": "sebastian/object-reflector",
-            "version": "4.0.x-dev",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/object-reflector.git",
-                "reference": "89dc41f115e98bfa597501c28e489dd7db93b855"
+                "reference": "cea2f459bb5d3d0a63bce71ddda57903d7150e53"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/object-reflector/zipball/89dc41f115e98bfa597501c28e489dd7db93b855",
-                "reference": "89dc41f115e98bfa597501c28e489dd7db93b855",
+                "url": "https://api.github.com/repos/sebastianbergmann/object-reflector/zipball/cea2f459bb5d3d0a63bce71ddda57903d7150e53",
+                "reference": "cea2f459bb5d3d0a63bce71ddda57903d7150e53",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.2"
+                "php": ">=8.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^11.3"
+                "phpunit/phpunit": "^12.0"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "4.0-dev"
+                    "dev-main": "5.0-dev"
                 }
             },
             "autoload": {
@@ -1613,7 +1476,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/object-reflector/issues",
                 "security": "https://github.com/sebastianbergmann/object-reflector/security/policy",
-                "source": "https://github.com/sebastianbergmann/object-reflector/tree/4.0"
+                "source": "https://github.com/sebastianbergmann/object-reflector/tree/main"
             },
             "funding": [
                 {
@@ -1633,32 +1496,33 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-09-26T11:47:29+00:00"
+            "time": "2025-09-26T11:48:46+00:00"
         },
         {
             "name": "sebastian/recursion-context",
-            "version": "6.0.x-dev",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/recursion-context.git",
-                "reference": "5d8d13f2fcb3c9839d4ff05613e008ceb02bfc64"
+                "reference": "ee84e0473412ee0a6c381fbabd618b31955f3c7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/recursion-context/zipball/5d8d13f2fcb3c9839d4ff05613e008ceb02bfc64",
-                "reference": "5d8d13f2fcb3c9839d4ff05613e008ceb02bfc64",
+                "url": "https://api.github.com/repos/sebastianbergmann/recursion-context/zipball/ee84e0473412ee0a6c381fbabd618b31955f3c7e",
+                "reference": "ee84e0473412ee0a6c381fbabd618b31955f3c7e",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.2"
+                "php": ">=8.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^11.3"
+                "phpunit/phpunit": "^12.0"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "6.0-dev"
+                    "dev-main": "7.0-dev"
                 }
             },
             "autoload": {
@@ -1689,7 +1553,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/recursion-context/issues",
                 "security": "https://github.com/sebastianbergmann/recursion-context/security/policy",
-                "source": "https://github.com/sebastianbergmann/recursion-context/tree/6.0"
+                "source": "https://github.com/sebastianbergmann/recursion-context/tree/main"
             },
             "funding": [
                 {
@@ -1709,32 +1573,33 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-09-26T12:14:53+00:00"
+            "time": "2025-09-26T12:16:33+00:00"
         },
         {
             "name": "sebastian/type",
-            "version": "5.1.x-dev",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/type.git",
-                "reference": "6abfe424c60c52cafb35c5c78e142304925817be"
+                "reference": "04f923c375c0430774f283e53340c374c498a562"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/type/zipball/6abfe424c60c52cafb35c5c78e142304925817be",
-                "reference": "6abfe424c60c52cafb35c5c78e142304925817be",
+                "url": "https://api.github.com/repos/sebastianbergmann/type/zipball/04f923c375c0430774f283e53340c374c498a562",
+                "reference": "04f923c375c0430774f283e53340c374c498a562",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.2"
+                "php": ">=8.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^11.3"
+                "phpunit/phpunit": "^12.0"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "5.1-dev"
+                    "dev-main": "6.0-dev"
                 }
             },
             "autoload": {
@@ -1758,7 +1623,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/type/issues",
                 "security": "https://github.com/sebastianbergmann/type/security/policy",
-                "source": "https://github.com/sebastianbergmann/type/tree/5.1"
+                "source": "https://github.com/sebastianbergmann/type/tree/main"
             },
             "funding": [
                 {
@@ -1778,29 +1643,30 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-09-26T12:19:36+00:00"
+            "time": "2025-09-26T12:20:52+00:00"
         },
         {
             "name": "sebastian/version",
-            "version": "5.0.x-dev",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/version.git",
-                "reference": "0e6075acec40b5ed867eefd095488171404c63fa"
+                "reference": "225ee32d2b812505e0a9bbe0faaf88c7b0c9ebd3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/version/zipball/0e6075acec40b5ed867eefd095488171404c63fa",
-                "reference": "0e6075acec40b5ed867eefd095488171404c63fa",
+                "url": "https://api.github.com/repos/sebastianbergmann/version/zipball/225ee32d2b812505e0a9bbe0faaf88c7b0c9ebd3",
+                "reference": "225ee32d2b812505e0a9bbe0faaf88c7b0c9ebd3",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.2"
+                "php": ">=8.3"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "5.0-dev"
+                    "dev-main": "6.0-dev"
                 }
             },
             "autoload": {
@@ -1824,7 +1690,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/version/issues",
                 "security": "https://github.com/sebastianbergmann/version/security/policy",
-                "source": "https://github.com/sebastianbergmann/version/tree/5.0"
+                "source": "https://github.com/sebastianbergmann/version/tree/main"
             },
             "funding": [
                 {
@@ -1844,7 +1710,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-09-26T12:27:57+00:00"
+            "time": "2025-09-26T12:29:27+00:00"
         },
         {
             "name": "staabm/side-effects-detector",
@@ -1951,15 +1817,13 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "phpunit/phpunit": 20
-    },
+    "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": {},
-    "platform-dev": {},
-    "platform-overrides": {
-        "php": "8.2.12"
+    "platform": {
+        "php": ">= 8.0",
+        "ext-mbstring": "*"
     },
+    "platform-dev": {},
     "plugin-api-version": "2.6.0"
 }
